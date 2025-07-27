@@ -1306,3 +1306,5 @@
 2025-07-25 23:52:59 [ERROR]: Error: getaddrinfo ENOTFOUND ac-hnjozna-shard-00-00.sk1zka9.mongodb.net
     at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/middlewares/users.auth.middleware.js:41:11
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-07-27 20:32:41 [INFO]: POST /api/v1/users/login
+2025-07-27 20:35:23 [INFO]: POST /api/v1/users/login

@@ -1,5 +1,3 @@
-// index.js or server.js
-
 import dotenv from "dotenv";
 import http from "http";
 import { Server } from "socket.io";
