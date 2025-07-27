@@ -1,0 +1,1308 @@
+2025-07-21 23:21:02 [ERROR]: Expected double-quoted property name in JSON at position 30 - POST /api/auth/login
+2025-07-21 23:21:02 [ERROR]: SyntaxError: Expected double-quoted property name in JSON at position 30
+    at JSON.parse (<anonymous>)
+    at parse (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\body-parser\lib\types\json.js:77:19)
+    at D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\body-parser\lib\read.js:123:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)
+    at invokeCallback (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\raw-body\index.js:238:16)
+    at done (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:519:28)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2025-07-21 23:21:12 [INFO]: POST /api/auth/login
+2025-07-21 23:24:39 [INFO]: POST /api/auth/login
+2025-07-21 23:29:14 [INFO]: POST /api/auth/login
+2025-07-21 23:39:49 [INFO]: POST /api/v1/users/login
+2025-07-21 23:41:29 [INFO]: POST /api/v1/users/verify_otp
+2025-07-21 23:47:45 [INFO]: POST /api/v1/users/login
+2025-07-21 23:47:50 [INFO]: POST /api/v1/users/verify_otp
+2025-07-21 23:53:47 [INFO]: POST /api/v1/users/login
+2025-07-21 23:53:50 [INFO]: POST /api/v1/users/verify_otp
+2025-07-21 23:55:15 [INFO]: POST /api/v1/users/verify_otp
+2025-07-22 00:26:43 [INFO]: POST /api/v1/users/verify_otp
+2025-07-22 00:26:43 [ERROR]: User not found - POST /api/v1/users/verify_otp
+2025-07-22 00:26:43 [ERROR]: Error: User not found
+    at Module.verifyOtpAndLogin (file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/services/user.service.js:37:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/controllers/user.controller.js:29:20
+2025-07-22 00:42:17 [INFO]: POST /api/v1/users/verify_otp
+2025-07-22 00:42:17 [ERROR]: User not found - POST /api/v1/users/verify_otp
+2025-07-22 00:42:17 [ERROR]: Error: User not found
+    at Module.verifyOtpAndLogin (file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/services/user.service.js:36:20)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/controllers/user.controller.js:17:20
+2025-07-22 00:42:22 [INFO]: POST /api/v1/users/login
+2025-07-22 00:42:22 [ERROR]: User does not exist - POST /api/v1/users/login
+2025-07-22 00:42:22 [ERROR]: Error: User does not exist
+    at Module.sendOtpForLogin (file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/services/user.service.js:10:20)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/controllers/user.controller.js:9:3
+2025-07-22 00:43:55 [INFO]: POST /api/v1/users/signup
+2025-07-22 00:48:04 [INFO]: POST /api/v1/users/signup
+2025-07-22 00:48:04 [ERROR]: ApiError is not defined - POST /api/v1/users/signup
+2025-07-22 00:48:04 [ERROR]: ReferenceError: ApiError is not defined
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/controllers/user.controller.js:33:5
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/utils/asyncHandler.js:3:21
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:157:13)
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/middlewares/validate.js:50:12
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+2025-07-22 00:48:28 [INFO]: POST /api/v1/users/signup
+2025-07-22 00:48:28 [ERROR]: Phone, name, and FCM token are required - POST /api/v1/users/signup
+2025-07-22 00:48:28 [ERROR]: Error: Phone, name, and FCM token are required
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/controllers/user.controller.js:34:11
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/utils/asyncHandler.js:3:21
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:157:13)
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/middlewares/validate.js:50:12
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+2025-07-22 00:49:10 [INFO]: POST /api/v1/users/signup
+2025-07-22 00:49:10 [ERROR]: Cast to string failed for value "{ phone: '7873468788', name: 'ZatchBell', fcmToken: 'noToken' }" (type Object) at path "phone" for model "User" - POST /api/v1/users/signup
+2025-07-22 00:49:10 [ERROR]: CastError: Cast to string failed for value "{ phone: '7873468788', name: 'ZatchBell', fcmToken: 'noToken' }" (type Object) at path "phone" for model "User"
+    at SchemaString.cast (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\mongoose\lib\schema\string.js:607:11)
+    at SchemaType.applySetters (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\mongoose\lib\schemaType.js:1255:12)
+    at SchemaString.castForQuery (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\mongoose\lib\schema\string.js:691:17)
+    at cast (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\mongoose\lib\cast.js:319:34)
+    at Query.cast (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\mongoose\lib\query.js:5055:12)
+    at Query._castConditions (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\mongoose\lib\query.js:2351:10)
+    at model.Query._findOne (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\mongoose\lib\query.js:2674:8)
+    at model.Query.exec (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\mongoose\lib\query.js:4604:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Module.sendOtpForSignup (file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/services/user.service.js:22:14)
+2025-07-22 00:58:34 [INFO]: POST /api/v1/users/signup
+2025-07-22 00:58:34 [ERROR]: fcmToken is not defined - POST /api/v1/users/signup
+2025-07-22 00:58:34 [ERROR]: ReferenceError: fcmToken is not defined
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/controllers/user.controller.js:40:53
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/utils/asyncHandler.js:3:21
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:157:13)
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/middlewares/validate.js:50:12
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+2025-07-22 00:59:06 [INFO]: POST /api/v1/users/signup
+2025-07-22 00:59:06 [ERROR]: Cast to string failed for value "{ phone: '7873468788', name: 'ZatchBell' }" (type Object) at path "phone" for model "User" - POST /api/v1/users/signup
+2025-07-22 00:59:06 [ERROR]: CastError: Cast to string failed for value "{ phone: '7873468788', name: 'ZatchBell' }" (type Object) at path "phone" for model "User"
+    at SchemaString.cast (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\mongoose\lib\schema\string.js:607:11)
+    at SchemaType.applySetters (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\mongoose\lib\schemaType.js:1255:12)
+    at SchemaString.castForQuery (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\mongoose\lib\schema\string.js:691:17)
+    at cast (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\mongoose\lib\cast.js:319:34)
+    at Query.cast (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\mongoose\lib\query.js:5055:12)
+    at Query._castConditions (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\mongoose\lib\query.js:2351:10)
+    at model.Query._findOne (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\mongoose\lib\query.js:2674:8)
+    at model.Query.exec (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\mongoose\lib\query.js:4604:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Module.sendOtpForSignup (file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/services/user.service.js:22:14)
+2025-07-22 01:01:39 [INFO]: POST /api/v1/users/signup
+2025-07-22 01:01:39 [ERROR]: FCM token must be a string - POST /api/v1/users/signup
+2025-07-22 01:01:39 [ERROR]: Error: FCM token must be a string
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/controllers/user.controller.js:41:11
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/utils/asyncHandler.js:3:21
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:157:13)
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/middlewares/validate.js:50:12
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+2025-07-22 01:02:04 [INFO]: POST /api/v1/users/signup
+2025-07-22 01:02:04 [ERROR]: Cast to string failed for value "{ phone: '7873468788', name: 'ZatchBell' }" (type Object) at path "phone" for model "User" - POST /api/v1/users/signup
+2025-07-22 01:02:04 [ERROR]: CastError: Cast to string failed for value "{ phone: '7873468788', name: 'ZatchBell' }" (type Object) at path "phone" for model "User"
+    at SchemaString.cast (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\mongoose\lib\schema\string.js:607:11)
+    at SchemaType.applySetters (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\mongoose\lib\schemaType.js:1255:12)
+    at SchemaString.castForQuery (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\mongoose\lib\schema\string.js:691:17)
+    at cast (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\mongoose\lib\cast.js:319:34)
+    at Query.cast (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\mongoose\lib\query.js:5055:12)
+    at Query._castConditions (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\mongoose\lib\query.js:2351:10)
+    at model.Query._findOne (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\mongoose\lib\query.js:2674:8)
+    at model.Query.exec (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\mongoose\lib\query.js:4604:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Module.sendOtpForSignup (file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/services/user.service.js:22:14)
+2025-07-22 22:15:42 [INFO]: POST /api/v1/users/signup
+2025-07-22 22:15:42 [ERROR]: Cast to string failed for value "{ phone: '7873468788', name: 'ZatchBell' }" (type Object) at path "phone" for model "User" - POST /api/v1/users/signup
+2025-07-22 22:15:42 [ERROR]: CastError: Cast to string failed for value "{ phone: '7873468788', name: 'ZatchBell' }" (type Object) at path "phone" for model "User"
+    at SchemaString.cast (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\mongoose\lib\schema\string.js:607:11)
+    at SchemaType.applySetters (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\mongoose\lib\schemaType.js:1255:12)
+    at SchemaString.castForQuery (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\mongoose\lib\schema\string.js:691:17)
+    at cast (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\mongoose\lib\cast.js:319:34)
+    at Query.cast (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\mongoose\lib\query.js:5055:12)
+    at Query._castConditions (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\mongoose\lib\query.js:2351:10)
+    at model.Query._findOne (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\mongoose\lib\query.js:2674:8)
+    at model.Query.exec (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\mongoose\lib\query.js:4604:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Module.sendOtpForSignup (file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/services/user.service.js:22:14)
+2025-07-22 22:20:40 [INFO]: POST /api/v1/users/signup
+2025-07-22 22:20:40 [ERROR]: First name must be a string - POST /api/v1/users/signup
+2025-07-22 22:20:40 [ERROR]: Error: First name must be a string
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/controllers/user.controller.js:37:11
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/utils/asyncHandler.js:3:21
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:157:13)
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/middlewares/validate.js:50:12
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+2025-07-22 22:21:08 [INFO]: POST /api/v1/users/signup
+2025-07-22 22:21:08 [ERROR]: User already exists - POST /api/v1/users/signup
+2025-07-22 22:21:08 [ERROR]: Error: User already exists
+    at Module.sendOtpForSignup (file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/services/user.service.js:22:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/controllers/user.controller.js:43:3
+2025-07-22 22:21:31 [INFO]: POST /api/v1/users/signup
+2025-07-22 22:23:53 [ERROR]: Expected double-quoted property name in JSON at position 52 - POST /api/v1/users//signup-verify
+2025-07-22 22:23:53 [ERROR]: SyntaxError: Expected double-quoted property name in JSON at position 52
+    at JSON.parse (<anonymous>)
+    at parse (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\body-parser\lib\types\json.js:77:19)
+    at D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\body-parser\lib\read.js:123:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)
+    at invokeCallback (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\raw-body\index.js:238:16)
+    at done (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:519:28)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2025-07-22 22:23:59 [INFO]: POST /api/v1/users//signup-verify
+2025-07-22 22:24:23 [INFO]: POST /api/v1/users/signup-verify
+2025-07-22 22:25:19 [INFO]: POST /api/v1/users/signup-verify
+2025-07-22 22:25:19 [ERROR]: User already registered - POST /api/v1/users/signup-verify
+2025-07-22 22:25:19 [ERROR]: Error: User already registered
+    at Module.userSignup (file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/services/user.service.js:69:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/controllers/user.controller.js:51:20
+2025-07-22 22:30:32 [INFO]: POST /api/v1/users/signup
+2025-07-22 22:30:37 [INFO]: POST /api/v1/users/signup-verify
+2025-07-22 22:31:26 [INFO]: POST /api/v1/users/login
+2025-07-22 22:31:31 [INFO]: POST /api/v1/users/verify_otp
+2025-07-22 22:44:51 [INFO]: POST /api/v1/users/signup
+2025-07-22 22:44:51 [ERROR]: User already exists - POST /api/v1/users/signup
+2025-07-22 22:44:51 [ERROR]: Error: User already exists
+    at Module.sendOtpForSignup (file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/services/user.service.js:22:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/controllers/user.controller.js:37:3
+2025-07-22 22:45:22 [INFO]: POST /api/v1/users/signup
+2025-07-22 22:45:49 [INFO]: POST /api/v1/users/signup-verify
+2025-07-22 22:45:49 [ERROR]: Invalid OTP - POST /api/v1/users/signup-verify
+2025-07-22 22:45:49 [ERROR]: Error: Invalid OTP
+    at Module.userSignup (file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/services/user.service.js:71:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/controllers/user.controller.js:45:20
+2025-07-22 22:46:00 [INFO]: POST /api/v1/users/signup-verify
+2025-07-22 22:47:44 [INFO]: POST /api/v1/users/login
+2025-07-22 22:47:51 [INFO]: POST /api/v1/users/verify_otp
+2025-07-22 22:47:51 [ERROR]: FCM Token is required - POST /api/v1/users/verify_otp
+2025-07-22 22:47:51 [ERROR]: Error: FCM Token is required
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/middlewares/validate.js:44:21
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:295:15
+    at processParams (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:582:12)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:291:5)
+    at Function.handle (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:186:3)
+2025-07-22 22:49:51 [INFO]: POST /api/v1/users/login
+2025-07-22 22:49:51 [ERROR]: "fcmToken" is not allowed - POST /api/v1/users/login
+2025-07-22 22:49:51 [ERROR]: Error: "fcmToken" is not allowed
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/middlewares/validate.js:44:21
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:295:15
+    at processParams (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:582:12)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:291:5)
+    at Function.handle (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:186:3)
+2025-07-22 22:50:24 [INFO]: POST /api/v1/users/login
+2025-07-22 22:50:24 [ERROR]: User does not exist - POST /api/v1/users/login
+2025-07-22 22:50:24 [ERROR]: Error: User does not exist
+    at Module.sendOtpForLogin (file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/services/user.service.js:9:20)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/controllers/user.controller.js:9:3
+2025-07-22 22:50:38 [INFO]: POST /api/v1/users/login
+2025-07-22 22:50:42 [INFO]: POST /api/v1/users/verify_otp
+2025-07-22 22:56:31 [INFO]: POST /api/v1/users/logout
+2025-07-22 22:56:31 [ERROR]: jwt expired - POST /api/v1/users/logout
+2025-07-22 22:56:31 [ERROR]: Error: jwt expired
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/middlewares/users.auth.middleware.js:29:15
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/utils/asyncHandler.js:3:21
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:295:15
+    at processParams (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:582:12)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:291:5)
+2025-07-22 23:00:50 [INFO]: POST /api/v1/users/logout
+2025-07-22 23:02:31 [INFO]: POST /api/v1/users/logout
+2025-07-22 23:02:31 [ERROR]: Invalid access token format - POST /api/v1/users/logout
+2025-07-22 23:02:31 [ERROR]: Error: Invalid access token format
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/middlewares/users.auth.middleware.js:41:11
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/utils/asyncHandler.js:3:21
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:295:15
+    at processParams (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:582:12)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:291:5)
+2025-07-22 23:02:51 [INFO]: POST /api/v1/users/login
+2025-07-22 23:02:58 [INFO]: POST /api/v1/users/verify_otp
+2025-07-22 23:03:03 [INFO]: POST /api/v1/users/logout
+2025-07-22 23:07:31 [INFO]: POST /api/v1/users/login
+2025-07-22 23:07:35 [INFO]: POST /api/v1/users/verify_otp
+2025-07-22 23:07:38 [INFO]: POST /api/v1/users/logout
+2025-07-22 23:10:17 [INFO]: POST /api/v1/users/login
+2025-07-22 23:10:21 [INFO]: POST /api/v1/users/verify_otp
+2025-07-22 23:10:24 [INFO]: POST /api/v1/users/logout
+2025-07-22 23:11:43 [INFO]: POST /api/v1/users/login
+2025-07-22 23:11:47 [INFO]: POST /api/v1/users/verify_otp
+2025-07-22 23:11:51 [INFO]: POST /api/v1/users/logout
+2025-07-22 23:16:05 [INFO]: POST /api/v1/users/login
+2025-07-22 23:16:09 [INFO]: POST /api/v1/users/verify_otp
+2025-07-22 23:17:52 [INFO]: POST /api/v1/users/logout
+2025-07-22 23:18:32 [INFO]: POST /api/v1/users/login
+2025-07-22 23:18:35 [INFO]: POST /api/v1/users/verify_otp
+2025-07-22 23:18:39 [INFO]: POST /api/v1/users/logout
+2025-07-22 23:19:49 [INFO]: POST /api/v1/users/signup
+2025-07-22 23:19:52 [INFO]: POST /api/v1/users/signup-verify
+2025-07-22 23:19:56 [INFO]: POST /api/v1/users/logout
+2025-07-22 23:21:19 [INFO]: POST /api/v1/users/login
+2025-07-22 23:21:27 [INFO]: POST /api/v1/users/verify_otp
+2025-07-23 10:34:40 [INFO]: GET /api/v1/users/get-all-users
+2025-07-23 10:51:00 [INFO]: GET /api/v1/users/get-user/687fcf3d94d363fb5a17e6be
+2025-07-23 10:51:10 [INFO]: GET /api/v1/users/get-user/687fcf3d94d363fb5a17e6bo
+2025-07-23 10:51:10 [ERROR]: Cast to ObjectId failed for value "687fcf3d94d363fb5a17e6bo" (type string) at path "_id" for model "User" - GET /api/v1/users/get-user/687fcf3d94d363fb5a17e6bo
+2025-07-23 10:51:10 [ERROR]: CastError: Cast to ObjectId failed for value "687fcf3d94d363fb5a17e6bo" (type string) at path "_id" for model "User"
+    at SchemaObjectId.cast (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\mongoose\lib\schema\objectId.js:251:11)
+    at SchemaType.applySetters (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\mongoose\lib\schemaType.js:1255:12)
+    at SchemaType.castForQuery (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\mongoose\lib\schemaType.js:1673:17)
+    at cast (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\mongoose\lib\cast.js:390:32)
+    at Query.cast (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\mongoose\lib\query.js:5055:12)
+    at Query._castConditions (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\mongoose\lib\query.js:2351:10)
+    at model.Query._findOne (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\mongoose\lib\query.js:2674:8)
+    at model.Query.exec (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\mongoose\lib\query.js:4604:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/controllers/user.controller.js:19:16
+2025-07-23 10:53:32 [INFO]: GET /api/v1/users/get-user/687fcf3d94d363fb5a17e6bo
+2025-07-23 10:53:32 [ERROR]: mongoose is not defined - GET /api/v1/users/get-user/687fcf3d94d363fb5a17e6bo
+2025-07-23 10:53:32 [ERROR]: ReferenceError: mongoose is not defined
+    at Module.getUserByIdService (file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/services/user.service.js:18:3)
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/controllers/user.controller.js:19:34
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/utils/asyncHandler.js:3:21
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:295:15
+    at param (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:600:14)
+2025-07-23 10:53:47 [INFO]: GET /api/v1/users/get-user/687fcf3d94d363fb5a17e6bo
+2025-07-23 10:53:47 [ERROR]: Invalid user ID format - GET /api/v1/users/get-user/687fcf3d94d363fb5a17e6bo
+2025-07-23 10:53:47 [ERROR]: Error: Invalid user ID format
+    at Module.getUserByIdService (file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/services/user.service.js:20:11)
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/controllers/user.controller.js:19:34
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/utils/asyncHandler.js:3:21
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:295:15
+    at param (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:600:14)
+2025-07-23 10:54:13 [INFO]: GET /api/v1/users/get-user/687fcf3d94d363fb5a17e6be
+2025-07-23 10:54:20 [INFO]: GET /api/v1/users/get-user/687fcf3d94d363fb5a17e7be
+2025-07-23 10:57:07 [INFO]: GET /api/v1/users/get-user/687fcf3d94d363fb5a17e7be
+2025-07-23 10:57:07 [ERROR]: user not found - GET /api/v1/users/get-user/687fcf3d94d363fb5a17e7be
+2025-07-23 10:57:07 [ERROR]: Error: user not found
+    at Module.getUserByIdService (file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/services/user.service.js:26:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/controllers/user.controller.js:19:16
+2025-07-23 10:58:02 [INFO]: GET /api/v1/users/get-user/687fcf3d94d363fb5a17e7be
+2025-07-23 10:58:02 [ERROR]: Unauthorized request - GET /api/v1/users/get-user/687fcf3d94d363fb5a17e7be
+2025-07-23 10:58:02 [ERROR]: Error: Unauthorized request
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/middlewares/users.auth.middleware.js:41:11
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/utils/asyncHandler.js:3:21
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:295:15
+    at param (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:600:14)
+    at param (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:610:14)
+2025-07-23 10:59:55 [INFO]: GET /api/v1/users/get-user/687fcf3d94d363fb5a17e7be
+2025-07-23 10:59:55 [ERROR]: jwt expired - GET /api/v1/users/get-user/687fcf3d94d363fb5a17e7be
+2025-07-23 10:59:55 [ERROR]: Error: jwt expired
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/middlewares/users.auth.middleware.js:41:11
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/utils/asyncHandler.js:3:21
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:295:15
+    at param (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:600:14)
+    at param (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:610:14)
+2025-07-23 11:02:09 [INFO]: POST /api/v1/users/login
+2025-07-23 11:03:53 [INFO]: POST /api/v1/users/signup
+2025-07-23 11:06:20 [INFO]: POST /api/v1/users/login
+2025-07-23 11:06:26 [INFO]: POST /api/v1/users/verify_otp
+2025-07-23 11:06:52 [INFO]: GET /api/v1/users/get-all-users
+2025-07-23 11:07:01 [INFO]: GET /api/v1/users/get-user/687fcf3d94d363fb5a17e7be
+2025-07-23 11:07:01 [ERROR]: user not found - GET /api/v1/users/get-user/687fcf3d94d363fb5a17e7be
+2025-07-23 11:07:01 [ERROR]: Error: user not found
+    at Module.getUserByIdService (file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/services/user.service.js:26:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/controllers/user.controller.js:19:16
+2025-07-23 16:39:08 [INFO]: GET /api/v1/chat
+2025-07-23 16:39:08 [ERROR]: Unauthorized request - GET /api/v1/chat
+2025-07-23 16:39:08 [ERROR]: Error: Unauthorized request
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/middlewares/users.auth.middleware.js:41:11
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/utils/asyncHandler.js:3:21
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:295:15
+    at processParams (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:582:12)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:291:5)
+2025-07-23 16:39:08 [INFO]: GET /api/v1/chat
+2025-07-23 16:39:08 [ERROR]: Unauthorized request - GET /api/v1/chat
+2025-07-23 16:39:08 [ERROR]: Error: Unauthorized request
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/middlewares/users.auth.middleware.js:41:11
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/utils/asyncHandler.js:3:21
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:295:15
+    at processParams (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:582:12)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:291:5)
+2025-07-23 16:41:21 [INFO]: GET /api/v1/chat
+2025-07-23 16:41:21 [ERROR]: Unauthorized request - GET /api/v1/chat
+2025-07-23 16:41:21 [ERROR]: Error: Unauthorized request
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/middlewares/users.auth.middleware.js:41:11
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/utils/asyncHandler.js:3:21
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:295:15
+    at processParams (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:582:12)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:291:5)
+2025-07-23 16:41:21 [INFO]: GET /api/v1/chat
+2025-07-23 16:41:21 [ERROR]: Unauthorized request - GET /api/v1/chat
+2025-07-23 16:41:21 [ERROR]: Error: Unauthorized request
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/middlewares/users.auth.middleware.js:41:11
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/utils/asyncHandler.js:3:21
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:295:15
+    at processParams (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:582:12)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:291:5)
+2025-07-23 16:41:30 [INFO]: GET /api/v1/chat
+2025-07-23 16:41:30 [ERROR]: Unauthorized request - GET /api/v1/chat
+2025-07-23 16:41:30 [ERROR]: Error: Unauthorized request
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/middlewares/users.auth.middleware.js:41:11
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/utils/asyncHandler.js:3:21
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:295:15
+    at processParams (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:582:12)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:291:5)
+2025-07-23 16:41:30 [INFO]: GET /api/v1/chat
+2025-07-23 16:41:30 [ERROR]: Unauthorized request - GET /api/v1/chat
+2025-07-23 16:41:30 [ERROR]: Error: Unauthorized request
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/middlewares/users.auth.middleware.js:41:11
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/utils/asyncHandler.js:3:21
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:295:15
+    at processParams (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:582:12)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:291:5)
+2025-07-23 16:47:56 [INFO]: GET /api/v1/chat
+2025-07-23 16:47:56 [ERROR]: jwt expired - GET /api/v1/chat
+2025-07-23 16:47:56 [ERROR]: Error: jwt expired
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/middlewares/users.auth.middleware.js:41:11
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/utils/asyncHandler.js:3:21
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:295:15
+    at processParams (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:582:12)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:291:5)
+2025-07-23 16:47:56 [INFO]: GET /api/v1/chat
+2025-07-23 16:47:56 [ERROR]: jwt expired - GET /api/v1/chat
+2025-07-23 16:47:56 [ERROR]: Error: jwt expired
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/middlewares/users.auth.middleware.js:41:11
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/utils/asyncHandler.js:3:21
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:295:15
+    at processParams (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:582:12)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:291:5)
+2025-07-23 16:48:12 [INFO]: POST /api/v1/users/logout
+2025-07-23 16:48:20 [INFO]: POST /api/v1/users/login
+2025-07-23 16:48:26 [INFO]: POST /api/v1/users/verify_otp
+2025-07-23 16:48:26 [INFO]: GET /api/v1/chat
+2025-07-23 16:48:26 [INFO]: GET /api/v1/chat
+2025-07-23 16:49:59 [INFO]: GET /api/v1/chat
+2025-07-23 16:49:59 [INFO]: GET /api/v1/chat
+2025-07-23 16:50:27 [INFO]: POST /api/v1/users/signup
+2025-07-23 16:50:39 [INFO]: POST /api/v1/users/signup-verify
+2025-07-23 16:50:43 [INFO]: GET /api/v1/chat
+2025-07-23 16:50:43 [INFO]: GET /api/v1/chat
+2025-07-23 16:55:48 [INFO]: GET /api/v1/user
+2025-07-23 16:55:48 [ERROR]: Route /api/v1/user not found - GET /api/v1/user
+2025-07-23 16:55:48 [ERROR]: Error: Route /api/v1/user not found
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/app.js:57:8
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:342:13)
+    at D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:297:9
+    at processParams (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:582:12)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:291:5)
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/app.js:47:3
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:342:13)
+    at D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:297:9
+2025-07-23 16:55:48 [INFO]: GET /api/v1/chat
+2025-07-23 16:55:48 [INFO]: GET /api/v1/user
+2025-07-23 16:55:48 [ERROR]: Route /api/v1/user not found - GET /api/v1/user
+2025-07-23 16:55:48 [ERROR]: Error: Route /api/v1/user not found
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/app.js:57:8
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:342:13)
+    at D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:297:9
+    at processParams (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:582:12)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:291:5)
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/app.js:47:3
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:342:13)
+    at D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:297:9
+2025-07-23 16:55:48 [INFO]: GET /api/v1/chat
+2025-07-23 16:56:23 [INFO]: GET /api/v1/get-all-users
+2025-07-23 16:56:23 [ERROR]: Route /api/v1/get-all-users not found - GET /api/v1/get-all-users
+2025-07-23 16:56:23 [ERROR]: Error: Route /api/v1/get-all-users not found
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/app.js:57:8
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:342:13)
+    at D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:297:9
+    at processParams (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:582:12)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:291:5)
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/app.js:47:3
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:342:13)
+    at D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:297:9
+2025-07-23 16:56:23 [INFO]: GET /api/v1/chat
+2025-07-23 16:56:23 [INFO]: GET /api/v1/get-all-users
+2025-07-23 16:56:23 [ERROR]: Route /api/v1/get-all-users not found - GET /api/v1/get-all-users
+2025-07-23 16:56:23 [ERROR]: Error: Route /api/v1/get-all-users not found
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/app.js:57:8
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:342:13)
+    at D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:297:9
+    at processParams (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:582:12)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:291:5)
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/app.js:47:3
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:342:13)
+    at D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:297:9
+2025-07-23 16:56:23 [INFO]: GET /api/v1/chat
+2025-07-23 16:57:01 [INFO]: GET /api/v1/chat
+2025-07-23 16:57:01 [INFO]: GET /api/v1/get-all-users
+2025-07-23 16:57:01 [ERROR]: Route /api/v1/get-all-users not found - GET /api/v1/get-all-users
+2025-07-23 16:57:01 [ERROR]: Error: Route /api/v1/get-all-users not found
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/app.js:57:8
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:342:13)
+    at D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:297:9
+    at processParams (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:582:12)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:291:5)
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/app.js:47:3
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:342:13)
+    at D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:297:9
+2025-07-23 16:57:01 [INFO]: GET /api/v1/get-all-users
+2025-07-23 16:57:01 [ERROR]: Route /api/v1/get-all-users not found - GET /api/v1/get-all-users
+2025-07-23 16:57:01 [ERROR]: Error: Route /api/v1/get-all-users not found
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/app.js:57:8
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:342:13)
+    at D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:297:9
+    at processParams (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:582:12)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:291:5)
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/app.js:47:3
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:342:13)
+    at D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:297:9
+2025-07-23 16:57:01 [INFO]: GET /api/v1/chat
+2025-07-23 16:57:24 [INFO]: GET /api/v1/users/get-all-users
+2025-07-23 16:58:06 [INFO]: GET /api/v1/chat
+2025-07-23 16:58:06 [INFO]: GET /api/v1/users/get-all-users
+2025-07-23 16:58:06 [INFO]: GET /api/v1/chat
+2025-07-23 16:58:06 [INFO]: GET /api/v1/users/get-all-users
+2025-07-23 16:59:29 [INFO]: GET /api/v1/chat
+2025-07-23 16:59:29 [INFO]: GET /api/v1/users/get-all-users
+2025-07-23 16:59:29 [INFO]: GET /api/v1/chat
+2025-07-23 16:59:29 [INFO]: GET /api/v1/users/get-all-users
+2025-07-23 17:00:07 [INFO]: GET /api/v1/chat
+2025-07-23 17:00:07 [INFO]: GET /api/v1/users/get-all-users
+2025-07-23 17:00:07 [INFO]: GET /api/v1/chat
+2025-07-23 17:00:07 [INFO]: GET /api/v1/users/get-all-users
+2025-07-23 17:05:54 [INFO]: GET /api/v1/chat
+2025-07-23 17:05:54 [INFO]: GET /api/v1/users/get-all-users
+2025-07-23 17:05:54 [INFO]: GET /api/v1/chat
+2025-07-23 17:05:54 [INFO]: GET /api/v1/users/get-all-users
+2025-07-23 17:05:56 [INFO]: GET /api/v1/chat
+2025-07-23 17:05:56 [INFO]: GET /api/v1/users/get-all-users
+2025-07-23 17:05:56 [INFO]: GET /api/v1/chat
+2025-07-23 17:05:56 [INFO]: GET /api/v1/users/get-all-users
+2025-07-23 17:06:12 [INFO]: GET /api/v1/chat
+2025-07-23 17:06:12 [INFO]: GET /api/v1/users/get-all-users
+2025-07-23 17:06:12 [INFO]: GET /api/v1/chat
+2025-07-23 17:06:12 [INFO]: GET /api/v1/users/get-all-users
+2025-07-23 17:16:04 [INFO]: GET /api/v1/chat
+2025-07-23 17:16:04 [INFO]: GET /api/v1/users/get-all-users
+2025-07-23 17:16:04 [INFO]: GET /api/v1/chat
+2025-07-23 17:16:04 [INFO]: GET /api/v1/users/get-all-users
+2025-07-23 17:16:18 [INFO]: GET /api/v1/users/get-all-users
+2025-07-23 17:16:56 [INFO]: POST /api/v1/users/signup-verify
+2025-07-23 17:16:56 [ERROR]: OTP expired - POST /api/v1/users/signup-verify
+2025-07-23 17:16:56 [ERROR]: Error: OTP expired
+    at Module.userSignup (file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/services/auth.service.js:73:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/controllers/auth.controller.js:45:20
+2025-07-23 17:17:05 [INFO]: POST /api/v1/users/signup
+2025-07-23 17:17:05 [ERROR]: User already exists - POST /api/v1/users/signup
+2025-07-23 17:17:05 [ERROR]: Error: User already exists
+    at Module.sendOtpForSignup (file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/services/auth.service.js:22:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/controllers/auth.controller.js:37:3
+2025-07-23 17:17:10 [INFO]: POST /api/v1/users/login
+2025-07-23 17:17:16 [INFO]: POST /api/v1/users/login
+2025-07-23 17:17:26 [INFO]: POST /api/v1/users/verify_otp
+2025-07-24 23:47:42 [INFO]: GET /api/v1/users/chat
+2025-07-24 23:47:42 [ERROR]: Route /api/v1/users/chat not found - GET /api/v1/users/chat
+2025-07-24 23:47:42 [ERROR]: Error: Route /api/v1/users/chat not found
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/app.js:57:8
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:342:13)
+    at D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:297:9
+    at processParams (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:582:12)
+    at Immediate.next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:291:5)
+    at Immediate._onImmediate (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:688:15)
+    at process.processImmediate (node:internal/timers:480:21)
+2025-07-24 23:48:04 [INFO]: GET /api/v1/users/chat
+2025-07-24 23:48:04 [ERROR]: Route /api/v1/users/chat not found - GET /api/v1/users/chat
+2025-07-24 23:48:04 [ERROR]: Error: Route /api/v1/users/chat not found
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/app.js:57:8
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:342:13)
+    at D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:297:9
+    at processParams (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:582:12)
+    at Immediate.next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:291:5)
+    at Immediate._onImmediate (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:688:15)
+    at process.processImmediate (node:internal/timers:480:21)
+2025-07-24 23:48:12 [INFO]: POST /api/v1/users/chat
+2025-07-24 23:48:12 [ERROR]: Route /api/v1/users/chat not found - POST /api/v1/users/chat
+2025-07-24 23:48:12 [ERROR]: Error: Route /api/v1/users/chat not found
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/app.js:57:8
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:342:13)
+    at D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:297:9
+    at processParams (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:582:12)
+    at Immediate.next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:291:5)
+    at Immediate._onImmediate (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:688:15)
+    at process.processImmediate (node:internal/timers:480:21)
+2025-07-24 23:49:54 [INFO]: POST /api/v1/chat
+2025-07-24 23:49:54 [ERROR]: UserId param not sent with request - POST /api/v1/chat
+2025-07-24 23:49:54 [ERROR]: Error: UserId param not sent with request
+    at accessOrCreateChatService (file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/services/chat.service.js:7:11)
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/controllers/chat.controller.js:8:22
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/utils/asyncHandler.js:3:21
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:157:13)
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/middlewares/users.auth.middleware.js:39:5
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-07-24 23:51:02 [INFO]: POST /api/v1/chat
+2025-07-24 23:54:55 [INFO]: POST /api/v1/chat
+2025-07-24 23:55:04 [ERROR]: UserId param not sent with request - POST /api/v1/chat
+2025-07-24 23:55:04 [ERROR]: Error: UserId param not sent with request
+    at accessOrCreateChatService (file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/services/chat.service.js:7:11)
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/controllers/chat.controller.js:8:22
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/utils/asyncHandler.js:3:21
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:157:13)
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/middlewares/users.auth.middleware.js:39:5
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-07-24 23:55:36 [INFO]: POST /api/v1/chat/group
+2025-07-24 23:55:36 [ERROR]: createGroupChatService is not defined - POST /api/v1/chat/group
+2025-07-24 23:55:36 [ERROR]: ReferenceError: createGroupChatService is not defined
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/controllers/chat.controller.js:20:17
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/utils/asyncHandler.js:3:21
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:157:13)
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/middlewares/users.auth.middleware.js:39:5
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-07-24 23:56:19 [INFO]: POST /api/v1/chat/group
+2025-07-24 23:56:19 [ERROR]: Group name and at least 2 members required - POST /api/v1/chat/group
+2025-07-24 23:56:19 [ERROR]: Error: Group name and at least 2 members required
+    at createGroupChatService (file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/services/chat.service.js:28:11)
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/controllers/chat.controller.js:21:23
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/utils/asyncHandler.js:3:21
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:157:13)
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/middlewares/users.auth.middleware.js:39:5
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-07-24 23:57:04 [INFO]: POST /api/v1/users/register
+2025-07-24 23:57:04 [ERROR]: Route /api/v1/users/register not found - POST /api/v1/users/register
+2025-07-24 23:57:04 [ERROR]: Error: Route /api/v1/users/register not found
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/app.js:57:8
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:342:13)
+    at D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:297:9
+    at processParams (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:582:12)
+    at Immediate.next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:291:5)
+    at Immediate._onImmediate (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:688:15)
+    at process.processImmediate (node:internal/timers:480:21)
+2025-07-24 23:59:21 [INFO]: GET /api/v1/chat
+2025-07-24 23:59:21 [ERROR]: invalid signature - GET /api/v1/chat
+2025-07-24 23:59:21 [ERROR]: Error: invalid signature
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/middlewares/users.auth.middleware.js:41:11
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/utils/asyncHandler.js:3:21
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:295:15
+    at processParams (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:582:12)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:291:5)
+2025-07-24 23:59:21 [INFO]: GET /api/v1/users/get-all-users
+2025-07-24 23:59:21 [ERROR]: invalid signature - GET /api/v1/users/get-all-users
+2025-07-24 23:59:21 [ERROR]: Error: invalid signature
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/middlewares/users.auth.middleware.js:41:11
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/utils/asyncHandler.js:3:21
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:295:15
+    at processParams (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:582:12)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:291:5)
+2025-07-24 23:59:21 [INFO]: GET /api/v1/chat
+2025-07-24 23:59:21 [ERROR]: invalid signature - GET /api/v1/chat
+2025-07-24 23:59:21 [ERROR]: Error: invalid signature
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/middlewares/users.auth.middleware.js:41:11
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/utils/asyncHandler.js:3:21
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:295:15
+    at processParams (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:582:12)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:291:5)
+2025-07-24 23:59:21 [INFO]: GET /api/v1/users/get-all-users
+2025-07-24 23:59:21 [ERROR]: invalid signature - GET /api/v1/users/get-all-users
+2025-07-24 23:59:21 [ERROR]: Error: invalid signature
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/middlewares/users.auth.middleware.js:41:11
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/utils/asyncHandler.js:3:21
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:295:15
+    at processParams (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:582:12)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:291:5)
+2025-07-24 23:59:50 [INFO]: POST /api/v1/users/login
+2025-07-24 23:59:50 [ERROR]: User does not exist - POST /api/v1/users/login
+2025-07-24 23:59:50 [ERROR]: Error: User does not exist
+    at Module.sendOtpForLogin (file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/services/auth.service.js:9:20)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/controllers/auth.controller.js:9:3
+2025-07-25 00:00:10 [INFO]: POST /api/v1/users/signup
+2025-07-25 00:00:13 [INFO]: POST /api/v1/users/signup-verify
+2025-07-25 00:00:14 [INFO]: GET /api/v1/chat
+2025-07-25 00:00:14 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 00:00:14 [INFO]: GET /api/v1/chat
+2025-07-25 00:00:14 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 00:00:55 [INFO]: POST /api/v1/chat/group
+2025-07-25 00:00:55 [ERROR]: Group name and at least 2 members required - POST /api/v1/chat/group
+2025-07-25 00:00:55 [ERROR]: Error: Group name and at least 2 members required
+    at createGroupChatService (file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/services/chat.service.js:28:11)
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/controllers/chat.controller.js:21:23
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/utils/asyncHandler.js:3:21
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:157:13)
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/middlewares/users.auth.middleware.js:39:5
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-07-25 00:01:46 [INFO]: POST /api/v1/chat/group
+2025-07-25 00:04:56 [INFO]: POST /api/v1/message
+2025-07-25 00:04:56 [ERROR]: newMessage.populate(...).populate is not a function - POST /api/v1/message
+2025-07-25 00:04:56 [ERROR]: TypeError: newMessage.populate(...).populate is not a function
+    at sendMessageService (file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/services/message.service.js:19:6)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/controllers/message.controller.js:9:19
+2025-07-25 00:08:06 [INFO]: POST /api/v1/message
+2025-07-25 00:09:46 [INFO]: GET /api/v1/chat
+2025-07-25 00:11:31 [INFO]: GET /api/v1/message/68827c12a18896ff8ddacd71
+2025-07-25 00:11:31 [ERROR]: Unauthorized request - GET /api/v1/message/68827c12a18896ff8ddacd71
+2025-07-25 00:11:31 [ERROR]: Error: Unauthorized request
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/middlewares/users.auth.middleware.js:41:11
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/utils/asyncHandler.js:3:21
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:295:15
+    at param (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:600:14)
+    at param (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:610:14)
+2025-07-25 00:11:40 [INFO]: GET /api/v1/message/68827c12a18896ff8ddacd71
+2025-07-25 00:12:05 [INFO]: GET /api/v1/message/68827d8ea639679901b61351
+2025-07-25 00:13:06 [INFO]: GET /api/v1/message/6882798e9a5a2cda7a5c23cb
+2025-07-25 00:17:11 [INFO]: POST /api/v1/message
+2025-07-25 00:17:18 [INFO]: POST /api/v1/message
+2025-07-25 00:17:24 [INFO]: POST /api/v1/message
+2025-07-25 00:20:13 [INFO]: POST /api/v1/users/get-all-users
+2025-07-25 00:20:13 [ERROR]: Route /api/v1/users/get-all-users not found - POST /api/v1/users/get-all-users
+2025-07-25 00:20:13 [ERROR]: Error: Route /api/v1/users/get-all-users not found
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/app.js:57:8
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:342:13)
+    at D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:297:9
+    at processParams (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:582:12)
+    at Immediate.next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:291:5)
+    at Immediate._onImmediate (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:688:15)
+    at process.processImmediate (node:internal/timers:480:21)
+2025-07-25 00:20:19 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 00:21:29 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 00:22:11 [INFO]: GET /api/v1/users/get-user/687fcf3d94d363fb5a17e6be
+2025-07-25 00:24:25 [INFO]: POST /api/v1/users/signup
+2025-07-25 00:25:53 [INFO]: POST /api/v1/users/signup
+2025-07-25 00:25:53 [ERROR]: User already exists - POST /api/v1/users/signup
+2025-07-25 00:25:53 [ERROR]: Error: User already exists
+    at Module.sendOtpForSignup (file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/services/auth.service.js:22:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/controllers/auth.controller.js:37:3
+2025-07-25 00:26:07 [INFO]: POST /api/v1/users/signup
+2025-07-25 00:26:07 [ERROR]: User already exists - POST /api/v1/users/signup
+2025-07-25 00:26:07 [ERROR]: Error: User already exists
+    at Module.sendOtpForSignup (file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/services/auth.service.js:22:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/controllers/auth.controller.js:37:3
+2025-07-25 00:26:45 [INFO]: POST /api/v1/users/signup
+2025-07-25 00:26:49 [INFO]: POST /api/v1/users/signup
+2025-07-25 00:26:49 [ERROR]: User already exists - POST /api/v1/users/signup
+2025-07-25 00:26:49 [ERROR]: Error: User already exists
+    at Module.sendOtpForSignup (file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/services/auth.service.js:22:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/controllers/auth.controller.js:37:3
+2025-07-25 00:31:42 [INFO]: POST /api/v1/users/signup
+2025-07-25 00:31:42 [ERROR]: User already exists - POST /api/v1/users/signup
+2025-07-25 00:31:42 [ERROR]: Error: User already exists
+    at Module.sendOtpForSignup (file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/services/auth.service.js:22:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/controllers/auth.controller.js:45:3
+2025-07-25 00:46:26 [INFO]: POST /api/v1/users/logout
+2025-07-25 00:52:26 [INFO]: POST /api/v1/users/signup
+2025-07-25 00:52:26 [ERROR]: Cast to string failed for value "{ phone: '8556555555', firstName: 'vsf', lastName: '8556555555' }" (type Object) at path "phone" for model "User" - POST /api/v1/users/signup
+2025-07-25 00:52:26 [ERROR]: CastError: Cast to string failed for value "{ phone: '8556555555', firstName: 'vsf', lastName: '8556555555' }" (type Object) at path "phone" for model "User"
+    at SchemaString.cast (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\mongoose\lib\schema\string.js:607:11)
+    at SchemaType.applySetters (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\mongoose\lib\schemaType.js:1255:12)
+    at SchemaString.castForQuery (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\mongoose\lib\schema\string.js:691:17)
+    at cast (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\mongoose\lib\cast.js:319:34)
+    at Query.cast (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\mongoose\lib\query.js:5055:12)
+    at Query._castConditions (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\mongoose\lib\query.js:2351:10)
+    at model.Query._findOne (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\mongoose\lib\query.js:2674:8)
+    at model.Query.exec (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\mongoose\lib\query.js:4604:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Module.sendOtpForSignup (file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/services/auth.service.js:21:14)
+2025-07-25 00:53:06 [INFO]: POST /api/v1/users/signup
+2025-07-25 00:53:06 [ERROR]: Cast to string failed for value "{ phone: '+1234567890', firstName: 'John', lastName: 'Doe' }" (type Object) at path "phone" for model "User" - POST /api/v1/users/signup
+2025-07-25 00:53:06 [ERROR]: CastError: Cast to string failed for value "{ phone: '+1234567890', firstName: 'John', lastName: 'Doe' }" (type Object) at path "phone" for model "User"
+    at SchemaString.cast (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\mongoose\lib\schema\string.js:607:11)
+    at SchemaType.applySetters (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\mongoose\lib\schemaType.js:1255:12)
+    at SchemaString.castForQuery (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\mongoose\lib\schema\string.js:691:17)
+    at cast (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\mongoose\lib\cast.js:319:34)
+    at Query.cast (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\mongoose\lib\query.js:5055:12)
+    at Query._castConditions (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\mongoose\lib\query.js:2351:10)
+    at model.Query._findOne (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\mongoose\lib\query.js:2674:8)
+    at model.Query.exec (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\mongoose\lib\query.js:4604:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Module.sendOtpForSignup (file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/services/auth.service.js:21:14)
+2025-07-25 00:56:52 [INFO]: POST /api/v1/users/signup
+2025-07-25 00:57:49 [INFO]: POST /api/v1/users/signup
+2025-07-25 00:57:49 [ERROR]: First name is required - POST /api/v1/users/signup
+2025-07-25 00:57:49 [ERROR]: Error: First name is required
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/controllers/auth.controller.js:37:11
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/utils/asyncHandler.js:3:21
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:157:13)
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/middlewares/validate.js:50:12
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+2025-07-25 00:58:18 [INFO]: POST /api/v1/users/signup-verify
+2025-07-25 00:58:18 [ERROR]: Invalid OTP - POST /api/v1/users/signup-verify
+2025-07-25 00:58:18 [ERROR]: Error: Invalid OTP
+    at Module.userSignup (file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/services/auth.service.js:88:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/controllers/auth.controller.js:58:20
+2025-07-25 00:58:38 [INFO]: POST /api/v1/users/signup-verify
+2025-07-25 00:59:13 [INFO]: POST /api/v1/users/login
+2025-07-25 00:59:13 [ERROR]: User does not exist - POST /api/v1/users/login
+2025-07-25 00:59:13 [ERROR]: Error: User does not exist
+    at Module.sendOtpForLogin (file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/services/auth.service.js:8:20)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/controllers/auth.controller.js:9:3
+2025-07-25 00:59:19 [INFO]: POST /api/v1/users/login
+2025-07-25 00:59:19 [ERROR]: User does not exist - POST /api/v1/users/login
+2025-07-25 00:59:19 [ERROR]: Error: User does not exist
+    at Module.sendOtpForLogin (file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/services/auth.service.js:8:20)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/controllers/auth.controller.js:9:3
+2025-07-25 00:59:48 [INFO]: POST /api/v1/users/login
+2025-07-25 00:59:48 [ERROR]: User does not exist - POST /api/v1/users/login
+2025-07-25 00:59:48 [ERROR]: Error: User does not exist
+    at Module.sendOtpForLogin (file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/services/auth.service.js:8:20)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/controllers/auth.controller.js:9:3
+2025-07-25 01:01:07 [INFO]: POST /api/v1/users/login
+2025-07-25 01:01:07 [ERROR]: User does not exist - POST /api/v1/users/login
+2025-07-25 01:01:07 [ERROR]: Error: User does not exist
+    at Module.sendOtpForLogin (file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/services/auth.service.js:8:20)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/controllers/auth.controller.js:9:3
+2025-07-25 01:01:15 [INFO]: POST /api/v1/users/login
+2025-07-25 01:01:45 [INFO]: POST /api/v1/users/verify_otp
+2025-07-25 01:01:46 [ERROR]: Cannot convert undefined or null to object - POST /api/v1/users/verify_otp
+2025-07-25 01:01:46 [ERROR]: TypeError: Cannot convert undefined or null to object
+    at Function.keys (<anonymous>)
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/middlewares/validate.js:13:16
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:295:15
+    at processParams (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:582:12)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:291:5)
+2025-07-25 01:02:24 [INFO]: POST /api/v1/users/verify_otp
+2025-07-25 01:02:24 [ERROR]: Cannot convert undefined or null to object - POST /api/v1/users/verify_otp
+2025-07-25 01:02:24 [ERROR]: TypeError: Cannot convert undefined or null to object
+    at Function.keys (<anonymous>)
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/middlewares/validate.js:13:16
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:295:15
+    at processParams (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:582:12)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:291:5)
+2025-07-25 01:03:08 [INFO]: POST /api/v1/users/verify_otp
+2025-07-25 01:03:08 [ERROR]: Cannot convert undefined or null to object - POST /api/v1/users/verify_otp
+2025-07-25 01:03:08 [ERROR]: TypeError: Cannot convert undefined or null to object
+    at Function.keys (<anonymous>)
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/middlewares/validate.js:13:16
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:295:15
+    at processParams (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:582:12)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:291:5)
+2025-07-25 01:03:35 [INFO]: POST /api/v1/users/verify_otp
+2025-07-25 01:03:35 [ERROR]: Cannot convert undefined or null to object - POST /api/v1/users/verify_otp
+2025-07-25 01:03:35 [ERROR]: TypeError: Cannot convert undefined or null to object
+    at Function.keys (<anonymous>)
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/middlewares/validate.js:13:16
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:295:15
+    at processParams (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:582:12)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:291:5)
+2025-07-25 22:32:15 [INFO]: POST /api/v1/users/login
+2025-07-25 22:32:49 [INFO]: POST /api/v1/users/verify_otp
+2025-07-25 22:32:49 [ERROR]: Cannot convert undefined or null to object - POST /api/v1/users/verify_otp
+2025-07-25 22:32:49 [ERROR]: TypeError: Cannot convert undefined or null to object
+    at Function.keys (<anonymous>)
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/middlewares/validate.js:13:16
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:295:15
+    at processParams (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:582:12)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:291:5)
+2025-07-25 22:38:59 [INFO]: POST /api/v1/users/verify_otp
+2025-07-25 22:38:59 [ERROR]: "deviceId" is not allowed - POST /api/v1/users/verify_otp
+2025-07-25 22:38:59 [ERROR]: Error: "deviceId" is not allowed
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/middlewares/validate.js:44:21
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:295:15
+    at processParams (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:582:12)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:291:5)
+    at Function.handle (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:186:3)
+2025-07-25 22:39:38 [INFO]: POST /api/v1/users/verify_otp
+2025-07-25 22:39:38 [ERROR]: "deviceId" is not allowed - POST /api/v1/users/verify_otp
+2025-07-25 22:39:38 [ERROR]: Error: "deviceId" is not allowed
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/middlewares/validate.js:44:21
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:295:15
+    at processParams (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:582:12)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:291:5)
+    at Function.handle (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:186:3)
+2025-07-25 22:42:03 [INFO]: POST /api/v1/users/verify_otp
+2025-07-25 22:44:21 [INFO]: GET /api/v1/users/get-user/687fcf3d94d363fb5a17e6be
+2025-07-25 22:44:54 [INFO]: GET /api/v1/users/get-user/687fcf3d94d363fb5a17e6be
+2025-07-25 22:45:09 [INFO]: GET /api/v1/users/get-user/687fcf3d94d363fb5a17e6be
+2025-07-25 22:45:56 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 22:46:45 [INFO]: GET /api/v1/users//get-user/688288fc1686e2e69ed7dae9
+2025-07-25 22:46:45 [ERROR]: Route /api/v1/users//get-user/688288fc1686e2e69ed7dae9 not found - GET /api/v1/users//get-user/688288fc1686e2e69ed7dae9
+2025-07-25 22:46:45 [ERROR]: Error: Route /api/v1/users//get-user/688288fc1686e2e69ed7dae9 not found
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/app.js:57:8
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:342:13)
+    at D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:297:9
+    at processParams (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:582:12)
+    at Immediate.next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:291:5)
+    at Immediate._onImmediate (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:688:15)
+    at process.processImmediate (node:internal/timers:480:21)
+2025-07-25 22:46:52 [INFO]: GET /api/v1/users/get-user/688288fc1686e2e69ed7dae9
+2025-07-25 22:46:52 [ERROR]: Unauthorized request - GET /api/v1/users/get-user/688288fc1686e2e69ed7dae9
+2025-07-25 22:46:52 [ERROR]: Error: Unauthorized request
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/middlewares/users.auth.middleware.js:41:11
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/utils/asyncHandler.js:3:21
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:295:15
+    at param (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:600:14)
+    at param (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:610:14)
+2025-07-25 22:47:00 [INFO]: GET /api/v1/users/get-user/688288fc1686e2e69ed7dae9
+2025-07-25 22:47:56 [INFO]: GET /api/v1/chat
+2025-07-25 22:47:56 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 22:47:57 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 22:47:57 [INFO]: GET /api/v1/chat
+2025-07-25 22:48:04 [INFO]: GET /api/v1/message/68827c12a18896ff8ddacd71
+2025-07-25 22:48:04 [ERROR]: Unauthorized request - GET /api/v1/message/68827c12a18896ff8ddacd71
+2025-07-25 22:48:04 [ERROR]: Error: Unauthorized request
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/middlewares/users.auth.middleware.js:41:11
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/utils/asyncHandler.js:3:21
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:295:15
+    at param (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:600:14)
+    at param (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:610:14)
+2025-07-25 22:48:11 [INFO]: GET /api/v1/chat
+2025-07-25 22:48:11 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 22:48:11 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 22:48:11 [INFO]: GET /api/v1/chat
+2025-07-25 22:49:40 [INFO]: GET /api/v1/chat
+2025-07-25 22:49:40 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 22:49:40 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 22:49:40 [INFO]: GET /api/v1/chat
+2025-07-25 22:49:41 [INFO]: GET /api/v1/chat
+2025-07-25 22:49:41 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 22:49:41 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 22:49:41 [INFO]: GET /api/v1/chat
+2025-07-25 22:49:43 [INFO]: GET /api/v1/chat
+2025-07-25 22:49:43 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 22:49:43 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 22:49:43 [INFO]: GET /api/v1/chat
+2025-07-25 22:49:55 [INFO]: GET /api/v1/chat
+2025-07-25 22:49:55 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 22:49:55 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 22:49:55 [INFO]: GET /api/v1/chat
+2025-07-25 22:50:12 [INFO]: GET /api/v1/chat
+2025-07-25 22:50:12 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 22:50:12 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 22:50:12 [INFO]: GET /api/v1/chat
+2025-07-25 22:50:15 [INFO]: GET /api/v1/chat
+2025-07-25 22:50:15 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 22:50:15 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 22:50:15 [INFO]: GET /api/v1/chat
+2025-07-25 22:50:16 [INFO]: GET /api/v1/chat
+2025-07-25 22:50:16 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 22:50:16 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 22:50:16 [INFO]: GET /api/v1/chat
+2025-07-25 22:53:11 [INFO]: GET /api/v1/chat
+2025-07-25 22:53:11 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 22:53:11 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 22:53:11 [INFO]: GET /api/v1/chat
+2025-07-25 22:53:12 [INFO]: GET /api/v1/chat
+2025-07-25 22:53:12 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 22:53:12 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 22:53:12 [INFO]: GET /api/v1/chat
+2025-07-25 22:53:13 [INFO]: GET /api/v1/chat
+2025-07-25 22:53:13 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 22:53:13 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 22:53:13 [INFO]: GET /api/v1/chat
+2025-07-25 22:53:15 [INFO]: GET /api/v1/chat
+2025-07-25 22:53:15 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 22:53:15 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 22:53:15 [INFO]: GET /api/v1/chat
+2025-07-25 22:53:22 [INFO]: GET /api/v1/chat
+2025-07-25 22:53:22 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 22:53:22 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 22:53:22 [INFO]: GET /api/v1/chat
+2025-07-25 22:53:27 [INFO]: GET /api/v1/chat
+2025-07-25 22:53:27 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 22:53:27 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 22:53:27 [INFO]: GET /api/v1/chat
+2025-07-25 22:53:31 [INFO]: GET /api/v1/chat
+2025-07-25 22:53:31 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 22:53:31 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 22:53:31 [INFO]: GET /api/v1/chat
+2025-07-25 22:53:38 [INFO]: GET /api/v1/chat
+2025-07-25 22:53:38 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 22:53:38 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 22:53:38 [INFO]: GET /api/v1/chat
+2025-07-25 22:53:45 [INFO]: GET /api/v1/chat
+2025-07-25 22:53:45 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 22:53:45 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 22:53:45 [INFO]: GET /api/v1/chat
+2025-07-25 22:54:10 [INFO]: GET /api/v1/chat
+2025-07-25 22:54:10 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 22:54:10 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 22:54:10 [INFO]: GET /api/v1/chat
+2025-07-25 22:54:48 [INFO]: GET /api/v1/chat
+2025-07-25 22:54:48 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 22:54:48 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 22:54:48 [INFO]: GET /api/v1/chat
+2025-07-25 22:54:50 [INFO]: GET /api/v1/chat
+2025-07-25 22:54:50 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 22:54:50 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 22:54:50 [INFO]: GET /api/v1/chat
+2025-07-25 22:55:06 [INFO]: GET /api/v1/chat
+2025-07-25 22:55:06 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 22:55:06 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 22:55:06 [INFO]: GET /api/v1/chat
+2025-07-25 22:55:11 [INFO]: GET /api/v1/chat
+2025-07-25 22:55:11 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 22:55:11 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 22:55:11 [INFO]: GET /api/v1/chat
+2025-07-25 22:57:41 [INFO]: GET /api/v1/chat
+2025-07-25 22:57:41 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 22:57:41 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 22:57:41 [INFO]: GET /api/v1/chat
+2025-07-25 22:57:48 [INFO]: GET /api/v1/chat
+2025-07-25 22:57:48 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 22:57:48 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 22:57:48 [INFO]: GET /api/v1/chat
+2025-07-25 23:00:26 [INFO]: GET /api/v1/chat
+2025-07-25 23:00:26 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 23:00:26 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 23:00:26 [INFO]: GET /api/v1/chat
+2025-07-25 23:00:26 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 23:00:26 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 23:00:40 [INFO]: GET /api/v1/chat
+2025-07-25 23:00:40 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 23:00:40 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 23:00:40 [INFO]: GET /api/v1/chat
+2025-07-25 23:00:40 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 23:00:40 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 23:02:16 [INFO]: GET /api/v1/chat
+2025-07-25 23:02:16 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 23:02:16 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 23:02:16 [INFO]: GET /api/v1/chat
+2025-07-25 23:02:21 [INFO]: GET /api/v1/chat
+2025-07-25 23:02:21 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 23:02:21 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 23:02:21 [INFO]: GET /api/v1/chat
+2025-07-25 23:02:53 [INFO]: GET /api/v1/chat
+2025-07-25 23:02:53 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 23:02:53 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 23:02:53 [INFO]: GET /api/v1/chat
+2025-07-25 23:03:29 [INFO]: GET /api/v1/chat
+2025-07-25 23:03:29 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 23:03:29 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 23:03:29 [INFO]: GET /api/v1/chat
+2025-07-25 23:03:31 [INFO]: GET /api/v1/chat
+2025-07-25 23:03:31 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 23:03:31 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 23:03:31 [INFO]: GET /api/v1/chat
+2025-07-25 23:06:47 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 23:06:47 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 23:06:48 [INFO]: GET /api/v1/chat
+2025-07-25 23:06:48 [INFO]: GET /api/v1/chat
+2025-07-25 23:07:12 [INFO]: GET /api/v1/message/6882798e9a5a2cda7a5c23cb
+2025-07-25 23:07:12 [ERROR]: Unauthorized request - GET /api/v1/message/6882798e9a5a2cda7a5c23cb
+2025-07-25 23:07:12 [ERROR]: Error: Unauthorized request
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/middlewares/users.auth.middleware.js:41:11
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/utils/asyncHandler.js:3:21
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:295:15
+    at param (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:600:14)
+    at param (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:610:14)
+2025-07-25 23:09:43 [INFO]: GET /api/v1/message/68827c12a18896ff8ddacd71
+2025-07-25 23:10:17 [INFO]: GET /api/v1/message/6882798e9a5a2cda7a5c23cb
+2025-07-25 23:15:50 [INFO]: POST /api/v1/chat
+2025-07-25 23:17:24 [INFO]: POST /api/v1/message
+2025-07-25 23:17:24 [ERROR]: Invalid access token format - POST /api/v1/message
+2025-07-25 23:17:24 [ERROR]: Error: Invalid access token format
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/middlewares/users.auth.middleware.js:41:11
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/utils/asyncHandler.js:3:21
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:295:15
+    at processParams (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:582:12)
+    at next (D:\Programming\Practice\Self Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:291:5)
+2025-07-25 23:17:41 [INFO]: POST /api/v1/message
+2025-07-25 23:17:47 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 23:17:47 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 23:17:47 [INFO]: GET /api/v1/chat
+2025-07-25 23:17:48 [INFO]: GET /api/v1/chat
+2025-07-25 23:17:54 [INFO]: GET /api/v1/message/6883c2cf393b73997cd491cc
+2025-07-25 23:28:21 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 23:28:21 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 23:28:21 [INFO]: GET /api/v1/chat
+2025-07-25 23:28:21 [INFO]: GET /api/v1/chat
+2025-07-25 23:28:21 [INFO]: GET /api/v1/message/6883c2cf393b73997cd491cc
+2025-07-25 23:28:21 [INFO]: GET /api/v1/message/68827c12a18896ff8ddacd71
+2025-07-25 23:28:21 [INFO]: GET /api/v1/message/6882798e9a5a2cda7a5c23cb
+2025-07-25 23:28:21 [INFO]: GET /api/v1/message/68827c12a18896ff8ddacd71
+2025-07-25 23:28:22 [INFO]: GET /api/v1/message/6883c2cf393b73997cd491cc
+2025-07-25 23:28:22 [INFO]: GET /api/v1/message/6882798e9a5a2cda7a5c23cb
+2025-07-25 23:28:36 [INFO]: GET /api/v1/message/6883c2cf393b73997cd491cc
+2025-07-25 23:28:50 [INFO]: GET /api/v1/message/68827c12a18896ff8ddacd71
+2025-07-25 23:31:31 [INFO]: POST /api/v1/message
+2025-07-25 23:31:38 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 23:31:38 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 23:31:38 [INFO]: GET /api/v1/chat
+2025-07-25 23:31:38 [INFO]: GET /api/v1/chat
+2025-07-25 23:31:38 [INFO]: GET /api/v1/message/6883c2cf393b73997cd491cc
+2025-07-25 23:31:38 [INFO]: GET /api/v1/message/68827c12a18896ff8ddacd71
+2025-07-25 23:31:38 [INFO]: GET /api/v1/message/6882798e9a5a2cda7a5c23cb
+2025-07-25 23:31:39 [INFO]: GET /api/v1/message/6882798e9a5a2cda7a5c23cb
+2025-07-25 23:31:39 [INFO]: GET /api/v1/message/6883c2cf393b73997cd491cc
+2025-07-25 23:31:39 [INFO]: GET /api/v1/message/68827c12a18896ff8ddacd71
+2025-07-25 23:31:45 [INFO]: GET /api/v1/message/68827c12a18896ff8ddacd71
+2025-07-25 23:34:07 [INFO]: GET /api/v1/message/6882798e9a5a2cda7a5c23cb
+2025-07-25 23:34:08 [INFO]: GET /api/v1/message/68827c12a18896ff8ddacd71
+2025-07-25 23:36:50 [INFO]: GET /api/v1/message/68827c12a18896ff8ddacd71
+2025-07-25 23:37:02 [INFO]: POST /api/v1/message
+2025-07-25 23:37:50 [INFO]: POST /api/v1/message
+2025-07-25 23:37:59 [INFO]: GET /api/v1/message/6883c2cf393b73997cd491cc
+2025-07-25 23:38:02 [INFO]: GET /api/v1/message/6882798e9a5a2cda7a5c23cb
+2025-07-25 23:44:58 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 23:44:58 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 23:44:58 [INFO]: GET /api/v1/chat
+2025-07-25 23:44:58 [INFO]: GET /api/v1/chat
+2025-07-25 23:44:58 [INFO]: GET /api/v1/message/6883c2cf393b73997cd491cc
+2025-07-25 23:44:58 [INFO]: GET /api/v1/message/68827c12a18896ff8ddacd71
+2025-07-25 23:44:58 [INFO]: GET /api/v1/message/6882798e9a5a2cda7a5c23cb
+2025-07-25 23:44:58 [INFO]: GET /api/v1/message/6882798e9a5a2cda7a5c23cb
+2025-07-25 23:44:59 [INFO]: GET /api/v1/message/6883c2cf393b73997cd491cc
+2025-07-25 23:44:59 [INFO]: GET /api/v1/message/68827c12a18896ff8ddacd71
+2025-07-25 23:45:43 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 23:45:43 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 23:45:43 [INFO]: GET /api/v1/chat
+2025-07-25 23:45:43 [INFO]: GET /api/v1/chat
+2025-07-25 23:45:43 [INFO]: GET /api/v1/message/6883c2cf393b73997cd491cc
+2025-07-25 23:45:43 [INFO]: GET /api/v1/message/68827c12a18896ff8ddacd71
+2025-07-25 23:45:43 [INFO]: GET /api/v1/message/6882798e9a5a2cda7a5c23cb
+2025-07-25 23:45:43 [INFO]: GET /api/v1/message/6883c2cf393b73997cd491cc
+2025-07-25 23:45:43 [INFO]: GET /api/v1/message/6882798e9a5a2cda7a5c23cb
+2025-07-25 23:45:44 [INFO]: GET /api/v1/message/68827c12a18896ff8ddacd71
+2025-07-25 23:46:15 [INFO]: GET /api/v1/message/68827c12a18896ff8ddacd71
+2025-07-25 23:48:56 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 23:48:56 [INFO]: GET /api/v1/users/get-all-users
+2025-07-25 23:48:56 [INFO]: GET /api/v1/chat
+2025-07-25 23:48:56 [INFO]: GET /api/v1/chat
+2025-07-25 23:48:56 [INFO]: GET /api/v1/message/6883c2cf393b73997cd491cc
+2025-07-25 23:48:56 [INFO]: GET /api/v1/message/68827c12a18896ff8ddacd71
+2025-07-25 23:48:56 [INFO]: GET /api/v1/message/6882798e9a5a2cda7a5c23cb
+2025-07-25 23:48:56 [INFO]: GET /api/v1/message/6882798e9a5a2cda7a5c23cb
+2025-07-25 23:48:56 [INFO]: GET /api/v1/message/6883c2cf393b73997cd491cc
+2025-07-25 23:48:56 [INFO]: GET /api/v1/message/68827c12a18896ff8ddacd71
+2025-07-25 23:49:05 [INFO]: GET /api/v1/message/6882798e9a5a2cda7a5c23cb
+2025-07-25 23:49:09 [INFO]: POST /api/v1/message
+2025-07-25 23:49:15 [INFO]: POST /api/v1/message
+2025-07-25 23:49:46 [INFO]: POST /api/v1/chat
+2025-07-25 23:49:46 [INFO]: POST /api/v1/chat
+2025-07-25 23:49:46 [INFO]: GET /api/v1/message/6883c2cf393b73997cd491cc
+2025-07-25 23:49:52 [INFO]: POST /api/v1/message
+2025-07-25 23:49:56 [INFO]: POST /api/v1/chat
+2025-07-25 23:49:56 [INFO]: POST /api/v1/chat
+2025-07-25 23:49:56 [INFO]: GET /api/v1/message/6882798e9a5a2cda7a5c23cb
+2025-07-25 23:50:24 [INFO]: POST /api/v1/chat/group
+2025-07-25 23:50:24 [INFO]: GET /api/v1/message/6883cae8f2c31cecf16a5ad1
+2025-07-25 23:50:36 [INFO]: POST /api/v1/message
+2025-07-25 23:52:24 [INFO]: GET /api/v1/message/6883c2cf393b73997cd491cc
+2025-07-25 23:52:29 [INFO]: GET /api/v1/message/6883cae8f2c31cecf16a5ad1
+2025-07-25 23:52:54 [ERROR]: getaddrinfo ENOTFOUND ac-hnjozna-shard-00-00.sk1zka9.mongodb.net - GET /api/v1/message/6883c2cf393b73997cd491cc
+2025-07-25 23:52:54 [ERROR]: Error: getaddrinfo ENOTFOUND ac-hnjozna-shard-00-00.sk1zka9.mongodb.net
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/middlewares/users.auth.middleware.js:41:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-07-25 23:52:59 [ERROR]: getaddrinfo ENOTFOUND ac-hnjozna-shard-00-00.sk1zka9.mongodb.net - GET /api/v1/message/6883cae8f2c31cecf16a5ad1
+2025-07-25 23:52:59 [ERROR]: Error: getaddrinfo ENOTFOUND ac-hnjozna-shard-00-00.sk1zka9.mongodb.net
+    at file:///D:/Programming/Practice/Self%20Practice/Gupshup/Gupshup_Backend/src/middlewares/users.auth.middleware.js:41:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
