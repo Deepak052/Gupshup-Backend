@@ -54,7 +54,10 @@ export const createGroupChatService = async (
 };
 
 export const fetchUserChatsService = async (userId) => {
-  return Chat.find({ members: { $in: [userId] } })
+  return Chat.find({
+    members: { $in: [userId] },
+    deletedBy: { $ne: userId }
+  })
     .populate("members", "firstName lastName email avatar")
     .sort({ updatedAt: -1 });
 };
@@ -75,5 +78,27 @@ export const getGroupChatByIdService = async (chatId, userId) => {
     );
   }
 
+  return chat;
+};
+
+export const clearChatService = async (chatId, userId) => {
+  const chat = await Chat.findOne({ _id: chatId, members: { $in: [userId] } });
+  if (!chat) throw new ApiError(httpStatus.NOT_FOUND, "Chat not found");
+
+  // Remove existing clear record if any, then add new one
+  chat.clearedBy = chat.clearedBy.filter((c) => c.user.toString() !== userId.toString());
+  chat.clearedBy.push({ user: userId, timestamp: new Date() });
+  await chat.save();
+  return chat;
+};
+
+export const deleteChatService = async (chatId, userId) => {
+  const chat = await Chat.findOne({ _id: chatId, members: { $in: [userId] } });
+  if (!chat) throw new ApiError(httpStatus.NOT_FOUND, "Chat not found");
+
+  if (!chat.deletedBy.includes(userId)) {
+    chat.deletedBy.push(userId);
+    await chat.save();
+  }
   return chat;
 };

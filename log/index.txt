@@ -1308,3 +1308,216 @@
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
 2025-07-27 20:32:41 [INFO]: POST /api/v1/users/login
 2025-07-27 20:35:23 [INFO]: POST /api/v1/users/login
+2026-05-16 17:05:15 [INFO]: POST /api/v1/users/login
+2026-05-16 17:05:15 [ERROR]: phone number is required - POST /api/v1/users/login
+2026-05-16 17:05:15 [ERROR]: Error: phone number is required
+    at file:///D:/Programming/Practice/Gupshup/Gupshup_Backend/src/middlewares/validate.js:44:21
+    at Layer.handleRequest (D:\Programming\Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\Programming\Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\Programming\Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\Programming\Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\Programming\Practice\Gupshup\Gupshup_Backend\node_modules\router\lib\layer.js:152:17)
+    at D:\Programming\Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:295:15
+    at processParams (D:\Programming\Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:582:12)
+    at next (D:\Programming\Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:291:5)
+    at router.handle (D:\Programming\Practice\Gupshup\Gupshup_Backend\node_modules\router\index.js:186:3)
+2026-05-16 17:10:02 [INFO]: POST /api/v1/users/login
+2026-05-16 17:10:03 [ERROR]: User does not exist - POST /api/v1/users/login
+2026-05-16 17:10:03 [ERROR]: Error: User does not exist
+    at Module.sendOtpForLogin (file:///D:/Programming/Practice/Gupshup/Gupshup_Backend/src/services/auth.service.js:8:20)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async file:///D:/Programming/Practice/Gupshup/Gupshup_Backend/src/controllers/auth.controller.js:9:3
+2026-05-16 17:10:13 [INFO]: POST /api/v1/users/signup
+2026-05-16 17:11:23 [INFO]: POST /api/v1/users/signup-verify
+2026-05-16 17:11:25 [INFO]: GET /api/v1/users/get-all-users
+2026-05-16 17:11:26 [INFO]: GET /api/v1/users/get-all-users
+2026-05-16 17:12:19 [INFO]: GET /api/v1/users/get-all-users
+2026-05-16 17:12:20 [INFO]: GET /api/v1/users/get-all-users
+2026-05-16 17:12:24 [INFO]: GET /api/v1/users/get-all-users
+2026-05-16 17:12:25 [INFO]: GET /api/v1/users/get-all-users
+2026-05-16 17:12:28 [INFO]: GET /api/v1/users/get-all-users
+2026-05-16 17:12:29 [INFO]: GET /api/v1/users/get-all-users
+2026-05-16 17:13:28 [INFO]: GET /api/v1/users/get-all-users
+2026-05-16 17:13:29 [INFO]: GET /api/v1/users/get-all-users
+2026-05-16 17:13:29 [INFO]: GET /api/v1/chat
+2026-05-16 17:13:31 [INFO]: GET /api/v1/chat
+2026-05-16 17:14:26 [INFO]: GET /api/v1/chat
+2026-05-16 17:14:26 [INFO]: GET /api/v1/users/get-user/6a08579d0b5a24c6108d109a
+2026-05-16 17:14:27 [INFO]: GET /api/v1/users/get-user/6a08579d0b5a24c6108d109a
+2026-05-16 17:14:44 [INFO]: PUT /api/v1/users/settings
+2026-05-16 17:14:50 [INFO]: GET /api/v1/chat
+2026-05-16 17:14:54 [INFO]: GET /api/v1/chat
+2026-05-16 17:14:54 [INFO]: GET /api/v1/users/get-user/6a08579d0b5a24c6108d109a
+2026-05-16 17:14:54 [INFO]: GET /api/v1/users/get-user/6a08579d0b5a24c6108d109a
+2026-05-16 17:14:57 [INFO]: GET /api/v1/chat
+2026-05-16 17:15:46 [INFO]: POST /api/v1/users/signup
+2026-05-16 17:16:24 [INFO]: POST /api/v1/users/signup-verify
+2026-05-16 17:16:29 [INFO]: GET /api/v1/users/get-all-users
+2026-05-16 17:16:30 [INFO]: GET /api/v1/users/get-all-users
+2026-05-16 17:16:30 [INFO]: GET /api/v1/chat
+2026-05-16 17:16:52 [INFO]: GET /api/v1/chat
+2026-05-16 17:17:14 [INFO]: POST /api/v1/chat
+2026-05-16 17:17:16 [INFO]: POST /api/v1/chat
+2026-05-16 17:17:17 [INFO]: GET /api/v1/message/6a0859430b5a24c6108d10db
+2026-05-16 17:17:23 [INFO]: POST /api/v1/message
+2026-05-16 17:17:39 [INFO]: GET /api/v1/users/get-all-users
+2026-05-16 17:17:40 [INFO]: GET /api/v1/users/get-all-users
+2026-05-16 17:17:40 [INFO]: GET /api/v1/chat
+2026-05-16 17:17:41 [INFO]: GET /api/v1/chat
+2026-05-16 17:17:41 [INFO]: GET /api/v1/message/6a0859430b5a24c6108d10db
+2026-05-16 17:17:42 [INFO]: GET /api/v1/message/6a0859430b5a24c6108d10db
+2026-05-16 17:17:45 [INFO]: GET /api/v1/message/6a0859430b5a24c6108d10db
+2026-05-16 17:17:49 [INFO]: POST /api/v1/message
+2026-05-16 17:19:07 [INFO]: GET /api/v1/users/get-all-users
+2026-05-16 17:19:07 [INFO]: GET /api/v1/users/get-all-users
+2026-05-16 17:19:08 [INFO]: GET /api/v1/users/get-all-users
+2026-05-16 17:19:08 [INFO]: GET /api/v1/users/get-all-users
+2026-05-16 17:19:08 [INFO]: GET /api/v1/chat
+2026-05-16 17:19:08 [INFO]: GET /api/v1/chat
+2026-05-16 17:19:09 [INFO]: GET /api/v1/chat
+2026-05-16 17:19:09 [INFO]: GET /api/v1/message/6a0859430b5a24c6108d10db
+2026-05-16 17:19:10 [INFO]: GET /api/v1/message/6a0859430b5a24c6108d10db
+2026-05-16 17:19:11 [INFO]: GET /api/v1/chat
+2026-05-16 17:19:11 [INFO]: GET /api/v1/message/6a0859430b5a24c6108d10db
+2026-05-16 17:19:12 [INFO]: GET /api/v1/message/6a0859430b5a24c6108d10db
+2026-05-16 17:19:25 [INFO]: GET /api/v1/users/get-all-users
+2026-05-16 17:19:25 [INFO]: GET /api/v1/users/get-all-users
+2026-05-16 17:19:26 [INFO]: GET /api/v1/users/get-all-users
+2026-05-16 17:19:26 [INFO]: GET /api/v1/users/get-all-users
+2026-05-16 17:19:26 [INFO]: GET /api/v1/chat
+2026-05-16 17:19:26 [INFO]: GET /api/v1/chat
+2026-05-16 17:19:27 [INFO]: GET /api/v1/chat
+2026-05-16 17:19:27 [INFO]: GET /api/v1/chat
+2026-05-16 17:19:27 [INFO]: GET /api/v1/message/6a0859430b5a24c6108d10db
+2026-05-16 17:19:27 [INFO]: GET /api/v1/message/6a0859430b5a24c6108d10db
+2026-05-16 17:19:32 [INFO]: GET /api/v1/message/6a0859430b5a24c6108d10db
+2026-05-16 17:19:32 [INFO]: GET /api/v1/message/6a0859430b5a24c6108d10db
+2026-05-16 17:19:50 [INFO]: GET /api/v1/message/6a0859430b5a24c6108d10db
+2026-05-16 17:19:54 [INFO]: GET /api/v1/message/6a0859430b5a24c6108d10db
+2026-05-16 17:20:02 [INFO]: POST /api/v1/message
+2026-05-16 17:21:56 [INFO]: GET /api/v1/users/get-all-users
+2026-05-16 17:21:57 [INFO]: GET /api/v1/users/get-all-users
+2026-05-16 17:21:57 [INFO]: GET /api/v1/chat
+2026-05-16 17:21:58 [INFO]: GET /api/v1/chat
+2026-05-16 17:21:58 [INFO]: GET /api/v1/message/6a0859430b5a24c6108d10db
+2026-05-16 17:21:59 [INFO]: GET /api/v1/message/6a0859430b5a24c6108d10db
+2026-05-16 17:22:05 [INFO]: GET /api/v1/users/get-all-users
+2026-05-16 17:22:06 [INFO]: GET /api/v1/users/get-all-users
+2026-05-16 17:22:06 [INFO]: GET /api/v1/chat
+2026-05-16 17:22:20 [INFO]: GET /api/v1/chat
+2026-05-16 17:22:20 [INFO]: GET /api/v1/message/6a0859430b5a24c6108d10db
+2026-05-16 17:22:21 [INFO]: GET /api/v1/message/6a0859430b5a24c6108d10db
+2026-05-16 17:25:52 [INFO]: GET /api/v1/message/6a0859430b5a24c6108d10db
+2026-05-16 17:26:58 [INFO]: GET /api/v1/message/6a0859430b5a24c6108d10db
+2026-05-16 17:29:48 [INFO]: GET /api/v1/users/get-all-users
+2026-05-16 17:30:01 [INFO]: GET /api/v1/users/get-all-users
+2026-05-16 17:30:01 [INFO]: GET /api/v1/chat
+2026-05-16 17:30:02 [INFO]: GET /api/v1/chat
+2026-05-16 17:30:02 [INFO]: GET /api/v1/message/6a0859430b5a24c6108d10db
+2026-05-16 17:30:57 [INFO]: GET /api/v1/message/6a0859430b5a24c6108d10db
+2026-05-16 17:31:21 [INFO]: GET /api/v1/users/get-all-users
+2026-05-16 17:31:21 [INFO]: GET /api/v1/users/get-all-users
+2026-05-16 17:31:22 [INFO]: GET /api/v1/users/get-all-users
+2026-05-16 17:31:22 [INFO]: GET /api/v1/users/get-all-users
+2026-05-16 17:31:22 [INFO]: GET /api/v1/chat
+2026-05-16 17:31:22 [INFO]: GET /api/v1/chat
+2026-05-16 17:31:23 [INFO]: GET /api/v1/chat
+2026-05-16 17:31:23 [INFO]: GET /api/v1/message/6a0859430b5a24c6108d10db
+2026-05-16 17:31:24 [INFO]: GET /api/v1/message/6a0859430b5a24c6108d10db
+2026-05-16 17:31:33 [INFO]: GET /api/v1/chat
+2026-05-16 17:31:33 [INFO]: GET /api/v1/message/6a0859430b5a24c6108d10db
+2026-05-16 17:31:34 [INFO]: GET /api/v1/message/6a0859430b5a24c6108d10db
+2026-05-16 17:32:20 [INFO]: GET /api/v1/message/6a0859430b5a24c6108d10db
+2026-05-16 17:33:09 [INFO]: GET /api/v1/users/get-all-users
+2026-05-16 17:33:10 [INFO]: GET /api/v1/users/get-all-users
+2026-05-16 17:33:10 [INFO]: GET /api/v1/chat
+2026-05-16 17:33:11 [INFO]: GET /api/v1/chat
+2026-05-16 17:33:11 [INFO]: GET /api/v1/message/6a0859430b5a24c6108d10db
+2026-05-16 17:33:12 [INFO]: GET /api/v1/message/6a0859430b5a24c6108d10db
+2026-05-16 17:35:19 [INFO]: GET /api/v1/users/get-all-users
+2026-05-16 17:35:26 [INFO]: GET /api/v1/users/get-all-users
+2026-05-16 17:35:26 [INFO]: GET /api/v1/chat
+2026-05-16 17:35:28 [INFO]: GET /api/v1/chat
+2026-05-16 17:35:28 [INFO]: GET /api/v1/message/6a0859430b5a24c6108d10db
+2026-05-16 17:35:31 [INFO]: GET /api/v1/message/6a0859430b5a24c6108d10db
+2026-05-16 17:40:44 [INFO]: GET /api/v1/users/get-all-users
+2026-05-16 17:40:56 [INFO]: GET /api/v1/users/get-all-users
+2026-05-16 17:41:04 [INFO]: GET /api/v1/users/get-all-users
+2026-05-16 17:41:08 [INFO]: GET /api/v1/chat
+2026-05-16 17:41:10 [INFO]: GET /api/v1/message/6a0859430b5a24c6108d10db
+2026-05-16 17:46:29 [INFO]: PUT /api/v1/chat/null/delete
+2026-05-16 17:46:29 [ERROR]: Cast to ObjectId failed for value "null" (type string) at path "_id" for model "Chat" - PUT /api/v1/chat/null/delete
+2026-05-16 17:46:29 [ERROR]: CastError: Cast to ObjectId failed for value "null" (type string) at path "_id" for model "Chat"
+    at SchemaObjectId.cast (D:\Programming\Practice\Gupshup\Gupshup_Backend\node_modules\mongoose\lib\schema\objectId.js:251:11)
+    at SchemaType.applySetters (D:\Programming\Practice\Gupshup\Gupshup_Backend\node_modules\mongoose\lib\schemaType.js:1255:12)
+    at SchemaType.castForQuery (D:\Programming\Practice\Gupshup\Gupshup_Backend\node_modules\mongoose\lib\schemaType.js:1673:17)
+    at cast (D:\Programming\Practice\Gupshup\Gupshup_Backend\node_modules\mongoose\lib\cast.js:390:32)
+    at Query.cast (D:\Programming\Practice\Gupshup\Gupshup_Backend\node_modules\mongoose\lib\query.js:5055:12)
+    at Query._castConditions (D:\Programming\Practice\Gupshup\Gupshup_Backend\node_modules\mongoose\lib\query.js:2351:10)
+    at model.Query._findOne (D:\Programming\Practice\Gupshup\Gupshup_Backend\node_modules\mongoose\lib\query.js:2674:8)
+    at model.Query.exec (D:\Programming\Practice\Gupshup\Gupshup_Backend\node_modules\mongoose\lib\query.js:4604:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async deleteChatService (file:///D:/Programming/Practice/Gupshup/Gupshup_Backend/src/services/chat.service.js:96:16)
+2026-05-16 17:46:50 [INFO]: GET /api/v1/chat
+2026-05-16 17:46:50 [INFO]: GET /api/v1/users/get-user/6a08579d0b5a24c6108d109a
+2026-05-16 17:46:51 [INFO]: GET /api/v1/users/get-user/6a08579d0b5a24c6108d109a
+2026-05-16 17:46:52 [INFO]: GET /api/v1/message/6a0859430b5a24c6108d10db
+2026-05-16 17:46:55 [INFO]: GET /api/v1/chat
+2026-05-16 17:46:57 [INFO]: GET /api/v1/message/6a0859430b5a24c6108d10db
+2026-05-16 17:47:08 [INFO]: GET /api/v1/chat
+2026-05-16 17:47:08 [INFO]: GET /api/v1/users/get-user/6a08579d0b5a24c6108d109a
+2026-05-16 17:47:09 [INFO]: GET /api/v1/users/get-user/6a08579d0b5a24c6108d109a
+2026-05-16 17:47:09 [INFO]: GET /api/v1/message/6a0859430b5a24c6108d10db
+2026-05-16 17:47:49 [INFO]: GET /api/v1/users/get-all-users
+2026-05-16 17:47:49 [INFO]: GET /api/v1/users/get-user/6a08579d0b5a24c6108d109a
+2026-05-16 17:47:49 [INFO]: GET /api/v1/users/get-user/6a08579d0b5a24c6108d109a
+2026-05-16 17:47:49 [INFO]: GET /api/v1/users/get-all-users
+2026-05-16 17:47:49 [INFO]: GET /api/v1/chat
+2026-05-16 17:47:50 [INFO]: POST /api/v1/users/logout
+2026-05-16 17:47:50 [INFO]: GET /api/v1/chat
+2026-05-16 17:47:50 [INFO]: GET /api/v1/message/6a0859430b5a24c6108d10db
+2026-05-16 17:47:51 [INFO]: GET /api/v1/message/6a0859430b5a24c6108d10db
+2026-05-16 17:48:21 [INFO]: POST /api/v1/users/login
+2026-05-16 17:48:44 [INFO]: POST /api/v1/users/verify_otp
+2026-05-16 17:48:46 [INFO]: GET /api/v1/users/get-all-users
+2026-05-16 17:48:47 [INFO]: GET /api/v1/users/get-all-users
+2026-05-16 17:48:47 [INFO]: GET /api/v1/chat
+2026-05-16 17:48:48 [INFO]: GET /api/v1/chat
+2026-05-16 17:48:48 [INFO]: GET /api/v1/message/6a0859430b5a24c6108d10db
+2026-05-16 17:48:49 [INFO]: GET /api/v1/message/6a0859430b5a24c6108d10db
+2026-05-16 17:53:14 [INFO]: GET /api/v1/users/get-all-users
+2026-05-16 17:53:16 [INFO]: GET /api/v1/users/get-all-users
+2026-05-16 17:53:16 [INFO]: GET /api/v1/chat
+2026-05-16 17:53:17 [INFO]: GET /api/v1/chat
+2026-05-16 17:53:17 [INFO]: GET /api/v1/message/6a0859430b5a24c6108d10db
+2026-05-16 17:53:18 [INFO]: GET /api/v1/message/6a0859430b5a24c6108d10db
+2026-05-16 17:57:15 [INFO]: GET /api/v1/users/get-all-users
+2026-05-16 17:57:16 [INFO]: GET /api/v1/users/get-all-users
+2026-05-16 17:57:16 [INFO]: GET /api/v1/chat
+2026-05-16 17:57:17 [INFO]: GET /api/v1/chat
+2026-05-16 17:57:17 [INFO]: GET /api/v1/message/6a0859430b5a24c6108d10db
+2026-05-16 17:57:18 [INFO]: GET /api/v1/message/6a0859430b5a24c6108d10db
+2026-05-16 17:58:01 [INFO]: GET /api/v1/users/get-all-users
+2026-05-16 17:58:03 [INFO]: GET /api/v1/users/get-all-users
+2026-05-16 17:58:03 [INFO]: GET /api/v1/chat
+2026-05-16 17:58:04 [INFO]: GET /api/v1/chat
+2026-05-16 17:58:04 [INFO]: GET /api/v1/message/6a0859430b5a24c6108d10db
+2026-05-16 17:58:05 [INFO]: GET /api/v1/message/6a0859430b5a24c6108d10db
+2026-05-16 18:02:11 [INFO]: POST /api/v1/users/login
+2026-05-16 18:05:40 [INFO]: POST /api/v1/users/login
+2026-05-16 18:05:59 [INFO]: POST /api/v1/users/verify_otp
+2026-05-16 18:06:01 [INFO]: GET /api/v1/users/get-all-users
+2026-05-16 18:06:01 [INFO]: GET /api/v1/users/get-all-users
+2026-05-16 18:06:01 [INFO]: GET /api/v1/chat
+2026-05-16 18:06:02 [INFO]: GET /api/v1/chat
+2026-05-16 18:06:02 [INFO]: GET /api/v1/message/6a0859430b5a24c6108d10db
+2026-05-16 18:06:03 [INFO]: GET /api/v1/message/6a0859430b5a24c6108d10db
+2026-05-16 18:06:14 [INFO]: GET /api/v1/message/6a0859430b5a24c6108d10db
+2026-05-16 18:06:34 [INFO]: GET /api/v1/message/6a0859430b5a24c6108d10db
+2026-05-16 18:06:56 [INFO]: GET /api/v1/users/get-user/6a0859010b5a24c6108d10cb
+2026-05-16 18:08:29 [INFO]: GET /api/v1/users/get-all-users
+2026-05-16 18:08:30 [INFO]: GET /api/v1/users/get-all-users
+2026-05-16 18:08:30 [INFO]: GET /api/v1/chat
+2026-05-16 18:08:31 [INFO]: GET /api/v1/chat
+2026-05-16 18:08:31 [INFO]: GET /api/v1/message/6a0859430b5a24c6108d10db
+2026-05-16 18:08:32 [INFO]: GET /api/v1/message/6a0859430b5a24c6108d10db

@@ -4,6 +4,8 @@ import {
   createGroupChatService,
   fetchUserChatsService,
   getGroupChatByIdService,
+  clearChatService,
+  deleteChatService,
 } from "../services/chat.service.js";
 
 export const accessOrCreateChat = asyncHandler(async (req, res) => {
@@ -26,4 +28,14 @@ export const createGroupChat = asyncHandler(async (req, res) => {
 export const getGroupChatById = asyncHandler(async (req, res) => {
   const chat = await getGroupChatByIdService(req.params.chatId, req.user._id);
   res.status(200).json({ success: true, chat });
+});
+
+export const clearChat = asyncHandler(async (req, res) => {
+  const chat = await clearChatService(req.params.chatId, req.user._id);
+  res.status(200).json({ success: true, chat, message: "Chat cleared successfully" });
+});
+
+export const deleteChat = asyncHandler(async (req, res) => {
+  const chat = await deleteChatService(req.params.chatId, req.user._id);
+  res.status(200).json({ success: true, chat, message: "Chat deleted successfully" });
 });

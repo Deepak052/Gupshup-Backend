@@ -16,12 +16,12 @@ const userSchema = new Schema(
     },
     email: {
       type: String,
-      default: null,
+      required: true,
+      unique: true,
       index: true,
     },
     phone: {
       type: String,
-      unique: true,
       default: null,
       index: true,
     },
@@ -104,6 +104,32 @@ const userSchema = new Schema(
       type: String,
       enum: ["Active", "Blocked"],
       default: "Active",
+    },
+    statusMessage: {
+      type: String,
+      default: "Hey there! I am using Gupshup.",
+    },
+    blockedUsers: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "User",
+      },
+    ],
+    reportedUsers: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "User",
+      },
+    ],
+    theme: {
+      type: String,
+      enum: ["light", "dark", "system"],
+      default: "dark",
+    },
+    notificationPreferences: {
+      sound: { type: Boolean, default: true },
+      desktop: { type: Boolean, default: true },
+      previews: { type: Boolean, default: true },
     },
     accessToken: {
       type: String,

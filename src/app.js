@@ -6,6 +6,7 @@ import crypto from "crypto";
 import userRouter from "./routes/index.routes.js";
 import messageRoutes from "./routes/message.routes.js";
 import chatRoutes from "./routes/chat.routes.js";
+import uploadRoutes from "./routes/upload.routes.js";
 import logger from "./utils/logger.js";
 import { ApiError } from "./utils/ApiError.js"; // (optional: for error handling)
 
@@ -29,7 +30,10 @@ app.use(
 // 🌐 CORS Configuration
 app.use(
   cors({
-    origin: "http://localhost:5173", // ✅ Use your frontend port here!
+    origin: function (origin, callback) {
+      // Allow all origins for development
+      callback(null, true);
+    },
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true, // required for cookies/session
   })
@@ -51,6 +55,7 @@ app.use((req, res, next) => {
 app.use("/api/v1/users", userRouter);
 app.use("/api/v1/chat", chatRoutes); // ✅ was written as `chatRouter` but imported as `chatRoutes`
 app.use("/api/v1/message", messageRoutes);
+app.use("/api/v1/upload", uploadRoutes);
 
 // ❌ Not Found Handler
 app.use((req, res, next) => {

@@ -27,3 +27,72 @@ if(!user){
 }
 return user;
 }
+
+export const updateUserProfileService = async (userId, updateData) => {
+  if (!mongoose.Types.ObjectId.isValid(userId)) {
+    throw new ApiError(httpStatus.BAD_REQUEST, "Invalid user ID format");
+  }
+
+  const user = await User.findByIdAndUpdate(
+    userId,
+    { $set: updateData },
+    { new: true }
+  ).select("-otp -refreshToken -accessToken");
+
+  if (!user) {
+    throw new ApiError(httpStatus.NOT_FOUND, "User not found");
+  }
+
+  return user;
+};
+
+export const updateUserSettingsService = async (userId, settingsData) => {
+  if (!mongoose.Types.ObjectId.isValid(userId)) {
+    throw new ApiError(httpStatus.BAD_REQUEST, "Invalid user ID format");
+  }
+
+  const user = await User.findByIdAndUpdate(
+    userId,
+    { $set: settingsData },
+    { new: true }
+  ).select("-otp -refreshToken -accessToken");
+
+  if (!user) {
+    throw new ApiError(httpStatus.NOT_FOUND, "User not found");
+  }
+
+  return user;
+};
+
+export const blockUserService = async (userId, targetUserId) => {
+  if (userId.toString() === targetUserId.toString()) {
+    throw new ApiError(httpStatus.BAD_REQUEST, "You cannot block yourself");
+  }
+  const user = await User.findByIdAndUpdate(
+    userId,
+    { $addToSet: { blockedUsers: targetUserId } },
+    { new: true }
+  );
+  return user;
+};
+
+export const unblockUserService = async (userId, targetUserId) => {
+  const user = await User.findByIdAndUpdate(
+    userId,
+    { $pull: { blockedUsers: targetUserId } },
+    { new: true }
+  );
+  return user;
+};
+
+export const reportUserService = async (userId, targetUserId) => {
+  if (userId.toString() === targetUserId.toString()) {
+    throw new ApiError(httpStatus.BAD_REQUEST, "You cannot report yourself");
+  }
+  const user = await User.findByIdAndUpdate(
+    userId,
+    { $addToSet: { reportedUsers: targetUserId } },
+    { new: true }
+  );
+  return user;
+};

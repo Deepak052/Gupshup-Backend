@@ -5,17 +5,17 @@ import { asyncHandler } from "../utils/asyncHandler.js";
 import { ApiError } from "../utils/ApiError.js";
 
 export const userLogin = asyncHandler(async (req, res) => {
-  const { phone } = req.body;
-  await UserService.sendOtpForLogin(phone);
+  const { email } = req.body;
+  await UserService.sendOtpForLogin(email);
   return res
     .status(httpStatus.OK)
     .json(new ApiResponse(httpStatus.OK, null, "OTP sent for login"));
 });
 
 export const otpVerify = asyncHandler(async (req, res) => {
-  const { phone, otp, fcmToken, deviceId } = req.body;
+  const { email, otp, fcmToken, deviceId } = req.body;
   const response = await UserService.verifyOtpAndLogin({
-    phone,
+    email,
     otp,
     fcmToken,
     deviceId,
@@ -28,10 +28,10 @@ export const otpVerify = asyncHandler(async (req, res) => {
 });
 
 export const userSignupOtp = asyncHandler(async (req, res) => {
-  const { phone, firstName, lastName, email, gender, referredBy } = req.body;
+  const { email, firstName, lastName, phone, gender, referredBy } = req.body;
 
-  if (!phone || typeof phone !== "string") {
-    throw new ApiError(httpStatus.BAD_REQUEST, "Phone must be a string");
+  if (!email || typeof email !== "string") {
+    throw new ApiError(httpStatus.BAD_REQUEST, "Email must be a string");
   }
   if (!firstName) {
     throw new ApiError(httpStatus.BAD_REQUEST, "First name is required");
@@ -41,10 +41,10 @@ export const userSignupOtp = asyncHandler(async (req, res) => {
   }
 
   await UserService.sendOtpForSignup({
-    phone,
+    email,
     firstName,
     lastName,
-    email,
+    phone,
     gender,
     referredBy,
   });
@@ -54,9 +54,9 @@ export const userSignupOtp = asyncHandler(async (req, res) => {
 });
 
 export const userSignupVerify = asyncHandler(async (req, res) => {
-  const { phone, otp, fcmToken, deviceId } = req.body;
+  const { email, otp, fcmToken, deviceId } = req.body;
   const response = await UserService.userSignup({
-    phone,
+    email,
     otp,
     fcmToken,
     deviceId,

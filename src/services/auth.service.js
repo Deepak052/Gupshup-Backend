@@ -3,8 +3,8 @@ import { ApiError } from "../utils/ApiError.js";
 import httpStatus from "http-status";
 
 // Send OTP for LOGIN (user must exist)
-const sendOtpForLogin = async (phone) => {
-  const user = await User.findOne({ phone });
+const sendOtpForLogin = async (email) => {
+  const user = await User.findOne({ email });
   if (!user) throw new ApiError(httpStatus.NOT_FOUND, "User does not exist");
 
   const otp = Math.floor(100000 + Math.random() * 900000); // Random 6-digit OTP
@@ -12,44 +12,44 @@ const sendOtpForLogin = async (phone) => {
   user.otp = { code: otp, expiresAt };
   await user.save();
 
-  // TODO: Integrate with SMS service to send OTP
-  console.log(`OTP for ${phone}: ${otp}`); // For testing, log OTP (remove in production)
+  // TODO: Integrate with Email service to send OTP
+  console.log(`OTP for ${email}: ${otp}`); // For testing, log OTP (remove in production)
   return {};
 };
 
 // Send OTP for SIGNUP (user must NOT exist)
 const sendOtpForSignup = async ({
-  phone,
+  email,
   firstName,
   lastName,
-  email,
+  phone,
   gender,
   referredBy,
 }) => {
-  let user = await User.findOne({ phone });
+  let user = await User.findOne({ email });
   if (user) throw new ApiError(httpStatus.CONFLICT, "User already exists");
 
   const otp = Math.floor(100000 + Math.random() * 900000); // Random 6-digit OTP
   const expiresAt = new Date(Date.now() + 10 * 60 * 1000); // 10 minutes expiry
   user = new User({
-    phone,
+    email,
     firstName,
     lastName,
-    email: email || null,
+    phone: phone || null,
     gender: gender || "",
     referredBy: referredBy || null,
     otp: { code: otp, expiresAt },
   });
   await user.save();
 
-  // TODO: Integrate with SMS service to send OTP
-  console.log(`OTP for ${phone}: ${otp}`); // For testing, log OTP (remove in production)
+  // TODO: Integrate with Email service to send OTP
+  console.log(`OTP for ${email}: ${otp}`); // For testing, log OTP (remove in production)
   return {};
 };
 
 // Verify OTP for LOGIN
-const verifyOtpAndLogin = async ({ phone, otp, fcmToken, deviceId }) => {
-  const user = await User.findOne({ phone });
+const verifyOtpAndLogin = async ({ email, otp, fcmToken, deviceId }) => {
+  const user = await User.findOne({ email });
   if (!user) throw new ApiError(httpStatus.NOT_FOUND, "User not found");
 
   const { code, expiresAt } = user.otp || {};
@@ -75,8 +75,8 @@ const verifyOtpAndLogin = async ({ phone, otp, fcmToken, deviceId }) => {
 };
 
 // Signup after verifying OTP
-const userSignup = async ({ phone, otp, fcmToken, deviceId }) => {
-  const user = await User.findOne({ phone });
+const userSignup = async ({ email, otp, fcmToken, deviceId }) => {
+  const user = await User.findOne({ email });
   if (!user)
     throw new ApiError(
       httpStatus.NOT_FOUND,

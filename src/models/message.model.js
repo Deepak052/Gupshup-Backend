@@ -14,6 +14,19 @@ const messageSchema = new mongoose.Schema(
       type: mongoose.Schema.Types.ObjectId,
       ref: "Chat",
     },
+    attachments: [
+      {
+        url: { type: String, required: true },
+        type: { type: String, enum: ["image", "document", "audio", "video"], default: "image" },
+        name: { type: String },
+      },
+    ],
+    isStarredBy: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "User",
+      },
+    ],
   },
   { timestamps: true }
 );

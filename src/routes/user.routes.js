@@ -13,4 +13,15 @@ router.get("/get-all-users",verifyJWT, UserController.getAllUsersController);
 //get user by id
 router.get("/get-user/:id",verifyJWT,UserController.getUserByIdController);
 
+// update user profile
+router.put("/profile", verifyJWT, UserController.updateUserProfileController);
+
+// update user settings
+router.put("/settings", verifyJWT, UserController.updateUserSettingsController);
+
+// block, unblock, report
+router.post("/block", verifyJWT, UserController.blockUserController);
+router.post("/unblock", verifyJWT, UserController.unblockUserController);
+router.post("/report", verifyJWT, UserController.reportUserController);
+
 export default router;

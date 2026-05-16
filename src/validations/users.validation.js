@@ -5,20 +5,22 @@ import { objectId, customJoi } from "./custom.validation.js";
 
 const userLogin = {
   body: Joi.object().keys({
-    phone: Joi.number().required().messages({
-      "string.base": "phone number must be a string",
-      "string.empty": "phone number is required",
-      "any.required": "phone number is required",
+    email: Joi.string().email().required().messages({
+      "string.base": "Email must be a string",
+      "string.email": "Email must be a valid email address",
+      "string.empty": "Email is required",
+      "any.required": "Email is required",
     }),
   }),
 };
 
 const verifyOtp = {
   body: Joi.object().keys({
-    phone: Joi.string().required().messages({
-      "string.base": "phone number must be a string",
-      "string.empty": "phone number is required",
-      "any.required": "phone number is required",
+    email: Joi.string().email().required().messages({
+      "string.base": "Email must be a string",
+      "string.email": "Email must be a valid email address",
+      "string.empty": "Email is required",
+      "any.required": "Email is required",
     }),
     fcmToken: Joi.string().required().messages({
       "string.base": "FCM Token must be a string",
@@ -38,10 +40,11 @@ const verifyOtp = {
 
 const resendOtp = {
   body: Joi.object().keys({
-    phone: Joi.number().required().messages({
-      "string.base": "phone number must be a string",
-      "string.empty": "phone number is required",
-      "any.required": "phone number is required",
+    email: Joi.string().email().required().messages({
+      "string.base": "Email must be a string",
+      "string.email": "Email must be a valid email address",
+      "string.empty": "Email is required",
+      "any.required": "Email is required",
     }),
   }),
 };
